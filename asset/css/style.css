@@ -1,0 +1,166 @@
+ @keyframes fadeIn { /* the use of @keyFrames is for animation purposes*/ 
+  from { /* how the animation will start off */ 
+    opacity: 0;
+    transform: translateY(-20px); /* makes it slide down a bit */
+  }
+  to { /* how the animation will end off */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to   { width: 44ch; } /* number of characters in your text */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar{
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/asset/img/backgroundimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+height: 100vh;
+  width: 100%; 
+  padding-top: 50px; 
+  font-style: italic;
+  
+     
+}
+
+
+
+.sectiontab ul{
+list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 50px;
+  font-size: 1.5rem;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    animation-timing-function: ease-out;
+    color:#1C1C1C;
+
+    
+  
+  
+}
+
+.sectiontab ul li a{
+    text-decoration: none;
+          color:#1C1C1C;
+
+      font-weight: 100;
+
+
+
+    
+}
+
+
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;      
+  min-height: 100vh;        
+  text-align: center;
+width: 100%;
+
+
+  
+}
+#home h1{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 300;
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    animation-timing-function: ease-out;
+        color:#1C1C1C;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#home p{
+   text-align: center;
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black; /* cursor */
+  width: 0;
+  animation: typing 4s steps(38, end) forwards,
+             blink .7s step-end infinite;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+  color:#2E2E2E;
+
+}
+
+.section h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+   font-weight: 300;
+  
+}
+
+#about p{
+ flex: 1;  
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin: 1em 20px 1.5em 20px;
+}
+
+#about, #resume, #contact{
+  background-color: rgba(201, 140, 188, 0.9);
+  padding-top: 50px; 
+  padding-bottom: 100px;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+#skills , #projects{
+  background-color:rgb(199, 192, 192);
+  padding-top: 50px; 
+  padding-bottom: 100px;
+  height: 100vh;
+  width: 100%;
+  
+}
+
+#about img{
+float: right;        
+  margin-right: 20px; 
+  width: 300px;        
+  height: auto;
+  border-radius: 10px; 
+  
+}
