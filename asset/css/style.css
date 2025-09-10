@@ -36,7 +36,7 @@ html {
 }
 
 #navbar{
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/asset/img/backgroundimage.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../img/backgroundimage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -164,3 +164,13 @@ float: right;
   border-radius: 10px; 
   
 }
+
+.proj-sec , .lang-sec{
+  display: none;
+}
+
+.proj-sec:target , .lang-sec:target{
+  display: block;
+
+}
+
