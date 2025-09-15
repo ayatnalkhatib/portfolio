@@ -36,7 +36,7 @@ html {
 }
 
 #navbar{
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/asset/img/backgroundimage.jpg);
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(/asset/img/bgoption.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
@@ -139,7 +139,7 @@ width: 100%;
 }
 
 #about, #resume, #contact{
-  background-color: rgba(201, 140, 188, 0.9);
+  background-color:#dfefff;
   padding-top: 50px; 
   padding-bottom: 100px;
   height: 100vh;
@@ -148,7 +148,7 @@ width: 100%;
 }
 
 #skills , #projects{
-  background-color:rgb(199, 192, 192);
+  background-color:#bcd9ff;
   padding-top: 50px; 
   padding-bottom: 100px;
   height: 100vh;
@@ -174,3 +174,9 @@ float: right;
 
 }
 
+#socials img{
+  float:right; 
+  width:50px;
+  height:50px;
+  margin-right: 20px;
+}
