@@ -1,9 +1,9 @@
- @keyframes fadeIn { /* the use of @keyFrames is for animation purposes*/ 
-  from { /* how the animation will start off */ 
+ @keyframes fadeIn { 
+  from { 
     opacity: 0;
-    transform: translateY(-20px); /* makes it slide down a bit */
+    transform: translateY(-20px); 
   }
-  to { /* how the animation will end off */
+  to { 
     opacity: 1;
     transform: translateY(0);
   }
@@ -12,7 +12,7 @@
 
 @keyframes typing {
   from { width: 0; }
-  to   { width: 44ch; } /* number of characters in your text */
+  to   { width: 44ch; } 
 }
 
 @keyframes blink {
@@ -40,42 +40,51 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center ;
-height: 100vh;
+  height: 100vh;
   width: 100%; 
   padding-top: 50px; 
   font-style: italic;
+  position: relative;
+  
   
      
 }
 
 
+#tabs{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 0;
+  padding: 30px 0 10px 0;  
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
 
+body.scrolled #tabs{
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+  box-shadow:  0 2px 6px rgba(0,0,0,0.1);
+}
 .sectiontab ul{
-list-style: none;
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex; 
   justify-content: center; 
   gap: 50px;
   font-size: 1.5rem;
-    animation-duration: 3s;
-    animation-name: fadeIn;
-    animation-timing-function: ease-out;
-    color:#1C1C1C;
-
-    
-  
-  
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  color:#1C1C1C;
 }
 
 .sectiontab ul li a{
-    text-decoration: none;
-          color:#1C1C1C;
-
-      font-weight: 100;
-
-
-
+  text-decoration: none;
+  color:#1C1C1C;
+  font-weight: 100;
     
 }
 
@@ -88,57 +97,77 @@ list-style: none;
   align-items: center;      
   min-height: 100vh;        
   text-align: center;
-width: 100%;
-
-
+  width: 100%;
   
 }
+
+
 #home h1{
-    text-align: center;
-    font-size: 6rem;
-    font-weight: 300;
-    animation-duration: 3s;
-    animation-name: fadeIn;
-    animation-timing-function: ease-out;
-        color:#1C1C1C;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: -90px; 
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 300;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  color:#1C1C1C;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
     
 }
 
 #home p{
-   text-align: center;
+  text-align: center;
   margin-top: 40px;
   font-size: 1.5rem;
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid black; /* cursor */
+  border-right: 2px solid black; 
   width: 0;
   animation: typing 4s steps(38, end) forwards,
-             blink .7s step-end infinite;
+  blink .7s step-end infinite;
   animation-fill-mode: both;
   animation-delay: 2s;
   color:#2E2E2E;
+  display: inline-block;
+  
 
 }
+
+#home p::after {
+  content: "";
+  display: block;
+  width: 70%;        
+  height: 2px;
+  background: #000;  
+  margin: 8px auto 0;
+}
+
 
 .section h2{
   text-align: center;
   font-size: 3rem;
   margin-bottom: 15px;
   line-height: 1.8;
-   font-weight: 300;
+  font-weight: 800;
+  margin-top: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 1px;
+  font-style: italic;
+  
+   
   
 }
 
-#about p{
- flex: 1;  
-  font-size: 1.4rem;
-  line-height: 1.6;
-  margin: 1em 20px 1.5em 20px;
+#about h2, #document h2, #contact h2{
+  color: #0A3D62;
 }
 
-#about, #resume, #contact{
+
+
+
+#about, #document, #contact{
   background-color:#dfefff;
   padding-top: 50px; 
   padding-bottom: 100px;
@@ -156,27 +185,82 @@ width: 100%;
   
 }
 
-#about img{
-float: right;        
-  margin-right: 20px; 
-  width: 300px;        
-  height: auto;
-  border-radius: 10px; 
-  
-}
-
-.proj-sec , .lang-sec{
+.proj-sec , .lang-sec, .doc-sec{
   display: none;
 }
 
-.proj-sec:target , .lang-sec:target{
+.proj-sec:target , .lang-sec:target, .doc-sec:target{
   display: block;
 
 }
 
-#socials img{
-  float:right; 
-  width:50px;
-  height:50px;
-  margin-right: 20px;
+
+
+.btn ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  gap: 50px;
+  font-size: 1.5rem;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: 6s;
+  color:#1C1C1C;
+  margin-top: 20px;
+    
+}
+
+.btn ul li a{
+  display: inline-block;   
+  text-decoration: none;
+  border: 2px outset rgba(0, 0, 0, 0.9);
+  padding: 10px 20px; 
+  background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)) ;
+  color:black;
+  
+}
+
+.btn ul li a:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  color:white;
+
+}
+
+/** about section **/ 
+
+#about-content{
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.self-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;        
+  object-fit: cover;
+  flex-shrink: 0;    
+  float: right;    
+  margin-right: 85px;   
+   
+}
+
+.about-info{
+  flex:1;
+  max-width: 650px;
+  padding: 10px 20px;
+   margin-left: 40px;
+}
+
+.about-info p{
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1em;
+  text-align: justify;   
+  text-justify: inter-word;
+
+
 }

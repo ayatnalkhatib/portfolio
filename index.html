@@ -6,21 +6,24 @@
   <meta name="description" content="Portfolio">
   <meta name="author" content="Ayat Alkhatib">
   <link rel="stylesheet" href="asset/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
  
 </head>
 <body>
   <section id="container"> 
     <div id="navbar">
-      <div id="socials">
+      
+     <!--- <div id="socials">
         <a href="www.linkedin.com/in/ayat-alkhatib-8a0b99300"><img src="asset/img/linkedin-removebg-preview.png"></a>
         <a href="https://github.com/ayatnalkhatib"><img src="asset/img/github svg.png"></a>
-      </div>
+      </div>-->
     <div id="tabs" class="sectiontab">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#document">Documents</a></li>
         <li><a href="#projects">Project</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -28,20 +31,52 @@
     <div id="home" class="section">
     <h1>Ayat Alkhatib</h1>
     <p>Information Science Student | Web Developer</p>
+    <div id="socials" class="btn">
+      <ul>
+        <li> <a href="www.linkedin.com/in/ayat-alkhatib-8a0b99300">Linkedin</a></li>
+        <li> <a href="https://github.com/ayatnalkhatib">Github</a></li>
+      </ul>
+     </div>
+     
     </div>
   </div>
     <div id="about" class="section">
       <h2>About Me</h2>
-      <img src="asset/img/computer.webp" placeholder="image">
-      <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. I didn’t grow up with a passion for tech, it actually started when I felt stuck and wanted to try something new. Once I got into programming, everything changed. Learning about how tech works, especially through front-end and back-end development, pulled me in completely.</p>
-
+      <div id="about-content">
+      <img src="asset/img/selfie.png" alt="self-img" class="self-img">
+      <div class="about-info">
+        <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. My journey into tech began when I felt stuck and decided to try something new, and once I discovered programming, I was hooked. Exploring how things work behind the scenes in both front-end and back-end development revealed my passion for problem-solving and creating through code. I love building websites with HTML, CSS, and JavaScript, and I get excited about turning ideas into real, tangible projects. I’m also curious about areas like game development and product design and hope to explore them further as I grow. While I’m still shaping my exact path, I’m driven by learning, building, and continually challenging myself in tech.</p>
+      </div>
+    </div>
     </div>
     <div id="skills" class="section">
       <h2>Skills</h2>
+      <progress value="80" max="100">HTML</progress>
+      <progress value="80" max="100">CSS</progress>
+      <progress value="70" max="100">JavaScript</progress>
+      <progress value="90" max="100">Teamwork</progress>
+      <progress value="90" max="100">Attention to Details</progress>
+      <progress value="90" max="100">Time Management</progress>
+      <progress value="90" max="100">Problem solving</progress>
+      <progress value="85" max="100">Forigen Language</progress>
+
     </div>
-     <div id="resume" class="section">
-      <h2>Documents</h2>
-      <p>View or download my resume and cover letter for more about my education and skills.</p>
+     <div id="document" class="section">
+      <h2 href="#document">Documents</h2>
+      <h4>View or download my resume and cover letter for more about my education and skills.</h4>
+      <div id="doc-tabs" class="sectiontab">
+        <ul>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#cover-letter">Cover letter</a></li>
+        </ul>
+      </div>
+      <div id="resume" class="doc-sec">
+        <h3>Resume</h3>
+      </div>
+      <div id="cover-letter" class="doc-sec">
+        <h3>Cover Letter</h3>
+      </div>
+
     </div>
     <div id="projects" class="section">
       <h2>Projects</h2>
@@ -56,10 +91,15 @@
       </div>
       <div id="written" class="proj-sec"></div>
       <div id="softskill" class="proj-sec"></div>
-      <div id="web" class="proj-sec"></div>
+      <div id="web" class="proj-sec">
+         <ul>
+          <li><a href="microsite/index.html">Microsite</a></li>
+          <li><a href="spacex/index.html">SpaceX</a></li>
+        </ul>
+      </div>
       <div id="prog" class="proj-sec">
         <ul>
-          <li><a href="calculator/index.html">Calculate</a></li>
+          <li><a href="calculator/index.html">Calculator</a></li>
         </ul>
       </div>
       <div id="database" class="proj-sec"></div>
@@ -70,6 +110,6 @@
     </div>
     
   </section>
-
+<script src="asset/js/script.js"></script>
 </body>
 </html>
