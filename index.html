@@ -7,18 +7,18 @@
   <meta name="author" content="Ayat Alkhatib">
   <link rel="stylesheet" href="asset/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
  
 </head>
 <body>
   <section id="container"> 
     <div id="navbar">
-      
-     <!--- <div id="socials">
-        <a href="www.linkedin.com/in/ayat-alkhatib-8a0b99300"><img src="asset/img/linkedin-removebg-preview.png"></a>
-        <a href="https://github.com/ayatnalkhatib"><img src="asset/img/github svg.png"></a>
-      </div>-->
-    <div id="tabs" class="sectiontab">
+    <div id="tabs" class="sectiontab" class="animation">
+      <div class="logo">
+              <img src="asset/img/logo.png">
+
+      </div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -27,13 +27,14 @@
         <li><a href="#projects">Project</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      
     </div>
     <div id="home" class="section">
     <h1>Ayat Alkhatib</h1>
     <p>Information Science Student | Web Developer</p>
     <div id="socials" class="btn">
       <ul>
-        <li> <a href="www.linkedin.com/in/ayat-alkhatib-8a0b99300">Linkedin</a></li>
+        <li> <a href="https://www.linkedin.com/in/ayat-alkhatib-8a0b99300">Linkedin</a></li>
         <li> <a href="https://github.com/ayatnalkhatib">Github</a></li>
       </ul>
      </div>
@@ -43,7 +44,7 @@
     <div id="about" class="section">
       <h2>About Me</h2>
       <div id="about-content">
-      <img src="asset/img/selfie.png" alt="self-img" class="self-img">
+      <img src="asset/img/photo.jpg" alt="self-img" class="self-img">
       <div class="about-info">
         <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. My journey into tech began when I felt stuck and decided to try something new, and once I discovered programming, I was hooked. Exploring how things work behind the scenes in both front-end and back-end development revealed my passion for problem-solving and creating through code. I love building websites with HTML, CSS, and JavaScript, and I get excited about turning ideas into real, tangible projects. I’m also curious about areas like game development and product design and hope to explore them further as I grow. While I’m still shaping my exact path, I’m driven by learning, building, and continually challenging myself in tech.</p>
       </div>
@@ -51,18 +52,63 @@
     </div>
     <div id="skills" class="section">
       <h2>Skills</h2>
-      <progress value="80" max="100">HTML</progress>
-      <progress value="80" max="100">CSS</progress>
-      <progress value="70" max="100">JavaScript</progress>
-      <progress value="90" max="100">Teamwork</progress>
-      <progress value="90" max="100">Attention to Details</progress>
-      <progress value="90" max="100">Time Management</progress>
-      <progress value="90" max="100">Problem solving</progress>
-      <progress value="85" max="100">Forigen Language</progress>
+      <div class="skill-grid">
+        <div class="column tech-column">
+        <div class="tech-skill">
+          <div class="icon-wrapper">
+          <img src="asset/img/html.png">
+          </div>
+          <span>HTML</span>      
+        </div>
+         <div class="tech-skill">
+          <div class="icon-wrapper">
+          <img src="asset/img/css.png">
+          </div>
+           <span>CSS</span> 
+        </div>
+         <div class="tech-skill">
+          <div class="icon-wrapper">
+          <img src="asset/img/js.png"></div>
+          <span>JavaScript</span> 
+          
+        </div>
+        <div class="tech-skill">
+          <div class="icon-wrapper">
+          <img src="asset/img/java.png"></div>
+          <span>Java</span>
+        </div>
+        </div>
+        <div class="column soft-column">
+         <div class="so-skill">
+          <div class="icon-wrapper">
+            
+          <img src="asset/img/teamwork.png"></div>
+           <span>Teamwork</span> 
+        </div>
+         <div class="so-skill">
+          <div class="icon-wrapper">
 
+          <img src="asset/img/attention-to-detail.png"></div>
+           <span>Attention to Details</span> 
+        </div>
+         <div class="so-skill">
+          <div class="icon-wrapper">
+
+          <img src="asset/img/time-managment.png"></div>
+           <span>Time Management</span> 
+        </div>
+         <div class="so-skill">
+          <div class="icon-wrapper">
+
+          <img src="asset/img/problem-solving.png"></div>
+           <span>Problem Solving</span> 
+        </div>
+        </div>
+         
+      </div>
     </div>
      <div id="document" class="section">
-      <h2 href="#document">Documents</h2>
+      <h2><a href="#document">Documents</a></h2>
       <h4>View or download my resume and cover letter for more about my education and skills.</h4>
       <div id="doc-tabs" class="sectiontab">
         <ul>
@@ -79,7 +125,7 @@
 
     </div>
     <div id="projects" class="section">
-      <h2>Projects</h2>
+      <h2><a href="#projects">Projects</a></h2>
       <div id="project-tabs" class="sectiontab">
         <ul>
           <li><a href="#written">Written</a></li>
@@ -107,9 +153,18 @@
    
     <div id="contact" class="section">
       <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xdklrbbl" method="POST" class="contact-form">
+      <label>Name: <br><input type="text" id="name" name="name" required placeholder="Your Full Name"></label>
+      <label>Email: <br><input type="email" name="email" placeholder="Your Email"></label>
+      <label>Message: <br><textarea name="message" placeholder="Write your message..."></textarea></label>
+      <!-- your other form fields go here -->
+      <button type="submit">Submit</button>
+    </form>
     </div>
     
   </section>
-<script src="asset/js/script.js"></script>
+    <button id="backToTop"><img src="asset/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+    <script src="asset/js/button.js"></script>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
