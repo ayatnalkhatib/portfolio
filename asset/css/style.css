@@ -81,7 +81,7 @@ body.scrolled #tabs{
   box-shadow:  0 2px 6px rgba(0,0,0,0.1);
 }
 
-.sectiontab ul{
+.sectiontab ul, .proj-sec ul{
   list-style: none;
   margin: 0;
   padding: 0;
@@ -210,7 +210,7 @@ body.scrolled #tabs{
   
 }
 
-#skills , #projects{
+#skills{
   background-color:#3a506b;
   padding-top: 50px; 
   padding-bottom: 100px;
@@ -471,3 +471,27 @@ body.scrolled #tabs{
   transform: translateY(-3px);
   box-shadow:  0 4px 10px rgba(252, 249, 249, 0.925);
 }
+
+/* projects */ 
+
+#projects{
+  background-color:#3a506b;
+  padding: 100px 20px;   
+  min-height: 120vh;     
+  width: 100%;
+}
+
+.proj-sec ul{
+  padding-top: 40px;
+}
+
+.proj-sec ul li a{
+  text-decoration: none;
+  color:white; 
+  
+}
+
+.proj-sec ul li a:hover{
+  text-decoration: underline;
+}
+
