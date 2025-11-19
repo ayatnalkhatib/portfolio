@@ -321,6 +321,13 @@ body.scrolled #tabs{
 }
 
 
+.section {
+  min-height: 100vh; 
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+
 
 .about-info{
   flex:1;
