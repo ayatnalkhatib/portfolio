@@ -321,11 +321,13 @@ body.scrolled #tabs{
 }
 
 
-.section {
-  min-height: 100vh; 
-  padding-top: 25px;
-  padding-bottom: 50px;
+#resume, #projects, #contact {
+  width: 100%;
+  clear: both;
+  padding: 100px 20px; /* or whatever spacing you like */
+  box-sizing: border-box;
 }
+
 
 
 
@@ -353,7 +355,7 @@ body.scrolled #tabs{
   background-color:#3a506b;
   padding-top: 50px; 
   padding-bottom: 100px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
 }
