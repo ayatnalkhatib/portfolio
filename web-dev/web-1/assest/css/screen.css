@@ -1,0 +1,140 @@
+html {
+    box-sizing:border-box;
+
+}
+
+*, *:before *:after{
+
+    box-sizing:inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.container{
+    padding:40px;
+    margin:auto;
+}
+body{
+    background-image:url('../img/webpage-background.jpg');
+    font-family: "Rokkitt", serif;
+    background-repeat: repeat-x;
+    background-size:contain; 
+
+  
+
+
+    
+}
+
+main{
+    background-color: whitesmoke;
+    width:800px;
+    height: auto;
+    margin: 20px auto; 
+    border: 1px solid #fff;
+
+
+}
+header {
+    position: relative;          
+    height: 300px;               
+    background-image: url('../img/webpage-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #fff;
+}
+
+.tabs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border: none;              
+    background-color: black;   
+}
+
+.tablinks {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    background-color: black;
+    color:#fff;
+}
+
+.tablinks:hover {
+    background-color: lightgrey;
+    color:black;
+}
+
+.container h2, h4, h5{
+    color:blue;
+   
+}
+
+#content {
+    margin-top: -50px; }
+
+
+.hgroup {
+    position: relative;  
+}
+
+.hgroup img {
+  float: right;
+    margin-top: -120px;
+    margin-right: 20px;
+    background-color: black;
+    border: 2px solid black; 
+}
+
+.hgroup h2,
+.hgroup p {
+    margin-right: 35%;  
+}
+
+.group-content p{
+    margin-top: 10px;
+}
+
+
+.alert{
+    color:rgb(255, 255, 255);
+    background-color: rgb(14, 159, 255);
+    padding: 5px;
+    margin-right: 220px;
+}
+
+.group-content h4{
+    font-size: 20px;
+}
+
+.group-content h5{
+    font-size: 15px;
+}
+
+#colophon{
+    background-color: black;
+    text-align:center;
+    color:white;
+    font-size: 1.2rem; 
+    display:flex;
+    flex-direction: column;
+   
+     padding: 5px 20px;
+  }
+
+
+    #colophon h6{
+    font-size: 1rem;
+    margin: 2px 0; 
+    text-align: left;
+  }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffalo River Concept</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Google Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body onload="GetData()">
+    <header class="primary">
+      <nav class="secondary">
+        <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+        <span class="divider">|</span>
+        <span class="phone">Call Us: (479) 747-4959</span>
+      </nav>      <section class="wrapper container">
+        <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="nav" id="navbar">
+          <ul>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+            <li><a href="trails.html">Trail Info</a></li>
+            <li><a href="about.html" class="nav-button">About</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <section id="featured-grid" class="container">
+      <h1>River Status Overview</h1>
+      <p>Before you hit the water or the trail, it's always a good idea to check latest Buffalo River water levels and weatherforecast-especially since conditions can change fast out here.</p>
+      <article>
+        <img src="assets/img/orange-kayak-bannersize.jpg" alt="orange-kayak">
+      </article>
+      <h2>About the River</h2>
+      <p>The Buffalo National River is rain-fed, so water levels vary with rainfall. Spring and early summer usually offer ideal floating conditions, but late summer can be too low in some areas. Always check river conditions before planning your float.</p>
+      <h3>Live Chart</h3>
+      <div class="chart-container">
+        <h2>Water Levels Over Time</h2>
+        <p>Water Levels</p>
+        <div class="cards">
+          <div class="flipthecard">
+            <div class="frontcard">
+              <h3>Boxley</h3>
+            </div>
+            <div class="returntofrontcard">
+              <canvas id="chartjs-0" class="chart-panel" height="400"></canvas>
+            </div>
+          </div>
+        
+
+        <div class="flipthecard">
+          <div class="frontcard2">
+            <h3>Ponca</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-1" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="flipthecard">
+          <div class="frontcard2">
+            <h3>Pruitt</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-2" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="flipthecard">
+          <div class="frontcard">
+            <h3>Carver</h3>
+          </div>
+          <div class="returntofrontcard">
+            <canvas id="chartjs-3" class="chart-panel" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div>
+        <section id="location-info">
+          <h2>Weather Forecast</h2>
+          <div id="weather-table-container" class="left-panel"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="left-panel">
+        <h2>Safety Tips</h2>
+        <p>Know the river conditions before you go</p>
+        <table class="safety-tips">
+        <thead>
+          <tr> 
+          <th>Levels</th>
+          <th> Height (FT)</th>
+          <th>Category</th>
+          <th>Description</th>
+        </tr>
+          
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>&lt; 1.2</td>
+            <td>Very Low</td>
+            <td>Dry in spots; heavy dragging. Kayaks only.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td> 1.3-1.9</td>
+            <td> Low but Floatable</td>
+            <td>Some dragging, short trips. Best for canoes.</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>2.0-2.9</td>
+            <td> Moderate</td>
+            <td>Good flow, fun rapids. Intermediate skill.</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>3.0-4.9</td>
+            <td>High (Expert Only)</td>
+            <td>Fast, dangerous. Advanced skills required.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td> 5.0+</td>
+              <td>Flood Level</td>
+              <td>Deadly—avoid all paddling.</td>
+            </tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+    <button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+    <footer id="colophon">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="site-name">Buffalo River Adventure Co.</span>
+          <ul>
+            <li><a href="weather-water.html">Current Water Levels</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="stay.html">Stay</a></li>
+          </ul>
+        </div>
+        <div class="footer-right" id="contact">
+          <form action="https://formspree.io/f/mnnpknaq" method="POST">
+            <label>Email:
+              <input type="email" name="email">
+            </label>
+            <label>Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Contact Us</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; 2025 Buffalo River Adventure Co.</small>
+      </div>
+    </footer>
+
+    <script src="assets/js/weather.js"></script>
+    <script src="assets/js/button.js"></script>
+  </body>
+</html>
+

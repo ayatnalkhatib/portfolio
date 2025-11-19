@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buffalo River Adventure Co</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Digital Natives">
+  <meta name="title" content="Let's book your next Buffalo River adventure!">
+  <meta name="description" content="Discover the best of Buffalo National River with our cabin and canoe rentals!">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!---Google Font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="primary">
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
+    <section class="wrapper container">
+       <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
+       <!-- Hamburger menu toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <!-- Nav Menu -->
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="float.html">Float</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="trails.html">Trail Info</a></li>
+        <li><a href="about.html" class="nav-button">About</a></li>
+      </ul>
+    </nav>
+    </section>
+  </header>
+   <!-- Hero Section -->
+   <section id="featured-grid" class="container">
+    <h1>Wildlife of the Buffalo</h1>
+    <p>The Ozark wilderness is one of the best places in America to spot wildlife in its natural habitat. Whether you're first-time visitor or seasoned tracker, keep your eyes and ears open—you never know what you'll find out here.</p>
+    <img src="assets/img/elkviewing-animal-landcape-banner-wildlife.jpg" alt="Buffalo wildlife image">
+</section>
+
+<!-- Wildlife Categories -->
+<section class="container">
+    <h2>Wildlife Categories</h2>
+    <p>Explore the different wildlife categories in the region</p>
+    <!--<img src="assets/img/baby-bear-wildlife.jpg" alt="Baby Black Bear">-->
+    <div class="card-grid">
+      <div class="card-item">
+        <img src="assets/img/Big-elk-contentsize-wildlife.jpg" alt="Elk">
+        <div class="card-content">
+          <h3>Elk</h3>
+          <p>Spot elk grazing in Boxley Valley, especially at dusk or dawn.</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="assets/img/wormseye-bird-flying-wildlife.jpg" alt="Bird Flying">
+        <div class="card-content">
+          <h3>Birds</h3>
+          <p>Look up for eagles, hawks, and colorful songbirds.</p>
+        </div>
+      </div>
+      <div class="card-item">
+        <img src="assets/img/river-otter-contentsize-wildlife.jpg" alt="Otter on Log">
+        <div class="card-content">
+          <h3>Mammals</h3>
+          <p>Black bears, deer, bobcats, otters.</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Wildlife Watching Tips -->
+ 
+<section class="container two-col-grid">
+    <div class="float-left">
+        <img src="assets/img/deer-reading-sign-wildlife.jpg" alt="Wildlife tips sign">
+    </div>
+    <div>
+        <h2>Wildlife Watching Tips</h2>
+        <ul class="tipslist">
+            <li><img src="assets/img/besttimestoview.png" alt="img" class="icon">
+              <strong>Best times to view wildlife:</strong> 
+              &nbsp; Early morning, late evening
+            </li>
+            <li><img src="assets/img/Untitled_design__1_-removebg-preview.png" alt="img" class="icon">
+              <strong>Responsible practices: </strong>
+              &nbsp; Minimize noise, respect distance
+              </li>
+        </ul>
+      </div>
+</section>
+
+<!-- Discover Wildlife Moments -->
+ <!--
+<section class="social-card-section">
+  <h2>Discover Wildlife Moments</h2>
+  <div class="social-card">
+    <img src="assets/img/dog-on-canoe-wildlife.jpg" alt="Instagram post example">
+    <p>Caught a glimpse of this amazing creature today 🦌</p>
+  </div>
+</section>
+-->
+<!-- Plan Your Visit
+<section class="plan-visit">
+    <h2>Plan Your Visit</h2>
+    <form action="#">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <button type="submit">Submit</button>
+    </form>
+</section> -->
+<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+
+<footer id="colophon">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="site-name">Buffalo River Adventure Co.</span>
+        <ul>
+          <li><a href="weather-water.html">Current Water Levels</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="wildlife.html">Wildlife</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="float.html">Float</a></li>
+          <li><a href="stay.html">Stay</a></li>
+        </ul>
+      </div>
+      <div class="footer-right" id="contact">
+        <form action="https://formspree.io/f/mnnpknaq" method="POST">
+          <label>Email:
+            <input type="email" name="email">
+          </label>
+          <label>Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; 2025 Buffalo River Adventure Co.</small>
+    </div>
+  </footer>
+  <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
+  <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
+
+</body>
+</html>

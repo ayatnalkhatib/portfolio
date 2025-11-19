@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buffalo River Adventure Co</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Digital Natives">
+  <meta name="title" content="Let's book your next Buffalo River adventure!">
+  <meta name="description" content="Discover the best of Buffalo National River with our cabin and canoe rentals!">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!---Google Font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="primary">
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
+    <section class="wrapper container">
+       <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
+       <!-- Hamburger menu toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <!-- Nav Menu -->
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="float.html">Float</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="trails.html">Trail Info</a></li>
+        <li><a href="about.html" class="nav-button">About</a></li>
+      </ul>
+    </nav>
+    </section>
+  </header>
+  <section class="intro">
+    <h2>Trails Worth Exploring</h2>
+    <p><strong>Hit the dirt. Take in the views. Breath.</strong></p>
+    <p>Tucked away in the hills near Ponca, Bear Ridge Cabin offers the perfect home base for your next Buffalo River getaway. Designed for two, this fully furnished hideaway is made for romantic escapes, unplugged weekends, or peaceful stays surrounded by nature (and elk!).</p>
+  </section>
+    <section class="two-col-grid container">
+      <div class="image-container">
+        <section class="hero-photo-grid">
+            <img src="assets/img/goat-trail-hiking.jpg" alt="cabins" class="grid-item">
+            <img src="assets/img/indian-rockhouse.jpg" alt="camps" class="grid-item">
+        </section>
+      </div>
+    </section>
+
+    <section class="container">
+        <h2>Popular Hiking Trails</h2>
+        <div class="card-grid">
+          <div class="card-item">
+            <img src="assets/img/lost-valley-trail.jpg" alt="Lost Valley">
+            <div class="card-content">
+              <h3>Lost Valley</h3>
+              <p>A must-see trail just minutes from Boxley Ridge Cabin. Features waterfalls, caves, and bluff shelters. (1.2 miles one way)</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="assets/img/whitaker-point.jpg" alt="Whitaker Point">
+            <div class="card-content">
+              <h3>Whitaker Point</h3>
+              <p>One of the most photographed spots in Arkansas. Moderate hike with a big payoff. (3 miles round trip)</p>
+            </div>
+          </div>
+          <div class="card-item">
+            <img src="assets/img/hemmed-hollow-waterfall.jpg" alt="Hemmed-In Hollow">
+            <div class="card-content">
+              <h3>Hemmed-In Hollow</h3>
+              <p>Home to the tallest waterfall between the Rockies and the Appalachians. (5.5 miles round trip from the river)</p>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+<!--
+    <section id="amenities" class="container amenities two-col-layout">
+        <h2>Mountain Biking Trails</h2>
+        <div>
+        <ul>
+            <li>Buffalo River Trail (BRT) – While mostly for hiking, some sections are accessible for experienced bikers.</li>
+            <li>Ponca Loop Trails (Coming Soon) – Planned bike-friendly paths designed to offer scenic views and varied terrain.</li>
+            <li>Local Forest Service Roads – Great for casual rides or gravel grinders looking to explore.</li>
+        </ul>
+        </div>
+        <div>
+        <img src="assets/img/mountain-biking.jpg" alt="Mountain Biker" class="img-left">
+      </div>
+    </section>
+    --->
+
+    <section class="info-feature container">
+        <h2>Tips for Trail Days</h2>
+        <figure>
+          <img src="assets/img/hiking-fall-leaves.webp" alt="Hiking in the fall leaves with a light coat and beanie cap." style="width:100%; max-height:300px; object-fit:cover;">
+          <figcaption>Start early and bring more water than you think you need.</figcaption>
+         </figure>
+        <ul>
+            <li>Check weather + trail conditions before heading out</li>
+            <li>Pack out all trash</li>
+            <li>Stay on marked trails</li>
+            <li>Watch for wildlife and enjoy from a distance</li>
+            <li>Cell service is limited, so plan your route ahead</li>
+        </ul>
+
+    </section>
+
+    <section class="location container">
+        <h2>Map Out Your Next Adventure</h2>
+        <p>This wild and scenic stretch flows for over 135 miles through the Ozark Mountains in northern Arkansas, carving out towering bluffs, lush valleys, and countless opportunities for adventure.</p>
+        <p>Explore the map below to get a feel for the land, trails, and river access points that make this area so unforgettable.</p>
+        <img src="assets/img/buffalo-river-map-950.jpg" alt="Trail Map">
+        <a href="#" class="button">View Full-Size Map</a>
+    </section>
+<button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+
+  <footer id="colophon">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="site-name">Buffalo River Adventure Co.</span>
+        <ul>
+          <li><a href="weather-water.html">Current Water Levels</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="wildlife.html">Wildlife</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="float.html">Float</a></li>
+          <li><a href="stay.html">Stay</a></li>
+        </ul>
+      </div>
+      <div class="footer-right" id="contact">
+        <form action="https://formspree.io/f/mnnpknaq" method="POST">
+          <label>Email:
+            <input type="email" name="email">
+          </label>
+          <label>Your message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; 2025 Buffalo River Adventure Co.</small>
+    </div>
+  </footer>
+  <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
+  <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
+
+</body>
+</html>

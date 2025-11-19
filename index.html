@@ -5,182 +5,379 @@
   <meta charset="UTF-8">
   <meta name="description" content="Portfolio">
   <meta name="author" content="Ayat Alkhatib">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="asset/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"> 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-<script src="assets/js/scripts.js"></script>
-
-
- 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"> 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <section id="container"> 
+    <!-- Navbar + Home hero -->
     <div id="navbar">
-    <div id="tabs" class="sectiontab" class="animation">
-      <div class="logo">
-              <img src="asset/img/logo.png">
+      <div id="tabs" class="sectiontab">
+        <div class="logo">
+          <a href="#home"><img src="asset/img/logo.png" alt="Logo"></a>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#document">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Home section remains inside navbar -->
+      <div id="home" class="section">
+        <h1>Ayat Alkhatib 🤗</h1>
+        <h4>Information Science Student | Web Developer</h4>
+          <p class="pitch">
+            <span class="line">I’m an Information Science student who enjoys creating clean, accessible, and user-friendly web experiences.</span>
+            <span class="line">I love learning new technologies, experimenting with design, and turning ideas into real projects.</span>
+          </p>
+        <div id="socials" class="btn">
+          <ul>
+            <li><a href="documents/resume/resume.pdf"> View Resume 📇</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+
+<div id="projects" class="section">
+  <h2>Projects</h2>
+
+ 
+    <div class="filter-buttons">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="written">Written</button>
+        <button data-filter="softskill">Soft Skills</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="prog">Programming</button>
+        <button data-filter="database">Database</button>
+        <button data-filter="capstone">Capstone</button>
+    </div>
+
+  <div class="project-grid">
+
+    <!--Written Projects-->
+      <div class="project-item" data-category="written">
+      <a href="written/finding-home/finding-home.pdf">
+        <img src="written/img/home.jpeg" class="project-img" alt="written-img">
+        <div class="overlay">
+          <p>A narrative essay that examines cultural adjustment and emotional growth after relocating from the Middle East to the United States.</p>
+        </div>
+        <div class="project-name">Finding Home</div>
+      </a>
+    </div>
+
+      <div class="project-item" data-category="written">
+      <a href="written/dialogic-argument/final-dialogic-argument.pdf">
+        <img src="written/img/diao.jpg" class="project-img" alt="written-img">
+        <div class="overlay">
+          <p>This dialogic argument highlights the need to balance technology and traditional learning to give students the best educational experience.</p>
+        </div>
+        <div class="project-name">Balancing Technology and Tradition</div>
+      </a>
+    </div>
+
+
+    <div class="project-item" data-category="written">
+      <a href="written/cultural-festivals/cultural-fest-essay.pdf">
+        <img src="written/img/cultural-fes.jpg" class="project-img" alt="written-img">
+        <div class="overlay">
+          <p>This project highlights how cultural festivals foster community connections, celebrate traditions, and support local culture and economy.</p>
+        </div>
+        <div class="project-name">Cultural Festivals</div>
+      </a>
+    </div>
+
+    <!--Soft Skills Projects-->
+
+     <div class="project-item" data-category="softskill">
+      <a href="soft-skill/human-computer-interface/interface-final-development.pdf">
+        <img src="soft-skill/img/seo-galaxy-R10-3wYGgEE-unsplash.jpg" class="project-img" alt="softskill-img">
+        <div class="overlay">
+          <p>Presented our Java project interface as a team using Google Slides, emphasizing collaboration and communication.</p>
+        </div>
+        <div class="project-name">Java Interface Presentation</div>
+      </a>
+    </div>
+
+      <div class="project-item" data-category="softskill">
+      <a href="soft-skill/buffaloriver-prese/Digital-Natives-Web-Presentation.pptx.pdf">
+        <img src="soft-skill/img/present-buffalo.jpg" class="project-img" alt="softskill-img">
+        <div class="overlay">
+          <p>Presented our Buffalo River website as a team using Google Slides, emphasizing collaboration and communication.</p>
+        </div>
+        <div class="project-name">Buffalo River Presentation</div>
+      </a>
+    </div>
+
+    <!--Web Projects-->
+    <div class="project-item" data-category="web">
+      <a href="web-dev/microsite/index.html">
+        <img src="asset/img/micrositebg.jpg" class="project-img" alt="web-img">
+        <div class="overlay">
+          <p>A microsite showcasing HTML, CSS, and JavaScript skills with AI-generated content. Focused on demonstrating coding ability.</p>
+        </div>
+        <div class="project-name">Microsite</div>
+      </a>
+    </div>
+
+
+
+    <div class="project-item" data-category="web">
+      <a href="web-dev/buffaloriver/index.html">
+        <img src="asset/img/buffalo.jpg" class="project-img"  alt="web-img">
+        <div class="overlay">
+          <p>Collaborated in a team to design and build a Buffalo River website using HTML, CSS, and JavaScript, focusing on layout, interactivity, and visual presentation.</p>
+        </div>
+        <div class="project-name">buffaloriver</div>
+      </a>
+    </div>
+
+    <div class="project-item" data-category="web">
+      <a href="web-dev/web-1/index.html">
+        <img src="asset/img/web-1.jpg" class="project-img"  alt="web-img">
+        <div class="overlay">
+          <p>This project showcases a simple webpage built with HTML and CSS, featuring navigation links, organized content, and a styled layout.</p>
+        </div>
+        <div class="project-name">Web-1</div>
+      </a>
+    </div>
+
+    <!--Programming Projects-->
+    <div class="project-item" data-category="prog">
+      <a href="program/calculator/index.html">
+        <img src="asset/img/calculator.jpg" class="project-img"  alt="prog-img">
+        <div class="overlay">
+          <p>A JavaScript calculator with addition, subtraction, multiplication, and division. Includes alerts and clear button for easy use.</p>
+        </div>
+        <div class="project-name">Calculator</div>
+      </a>
+    </div>
+
+    <div class="project-item" data-category="prog">
+      <a href="program/currency-value-history/index.html">
+        <img src="asset/img/currency-value.jpg" class="project-img" alt="prog-img">
+        <div class="overlay">
+          <p>A tool to compare currency exchange rates over time with interactive charts and date selection. Built with JavaScript.</p>
+        </div>
+        <div class="project-name">Currency History</div>
+      </a>
+    </div>
+
+    <!--DataBase Projects-->
+    <div class="project-item" data-category="database">
+      <a href="database/south-aniversity-autorama-safety-products/autorama-safety.pdf">
+        <img src="database/img/autorama-sales.png" class="project-img" alt="database-img">
+        <div class="overlay">
+          <p>Developed a Google Sheets project to calculate and visualize retail product values, totals, and percentages using formulas and charts.</p>
+        </div>
+        <div class="project-name">Autorama Sales Report</div>
+      </a>
+    </div>
+
+      <div class="project-item" data-category="database">
+      <a href="database/ticket-sale/ticket-sales.pdf">
+        <img src="database/img/tickets-sales.png" class="project-img" alt="database-img">
+        <div class="overlay">
+          <p>Created a multi-sheet Google Sheets workbook to calculate and visualize ticket sales across three locations using formulas, absolute referencing, and charts.</p>
+        </div>
+        <div class="project-name">Ticket Sale</div>
+      </a>
+    </div>
+
+      <div class="project-item" data-category="database">
+      <a href="database/jewelry/jewelry.pdf" >
+        <img src="database/img/jewelry.png" class="project-img" alt="database-img">
+        <div class="overlay">
+          <p>Built a detailed Google Sheets project for inventory management and data analysis using formulas, conditional formatting, and visualizations.</p>
+        </div>
+        <div class="project-name">Jewelry</div>
+      </a>
+    </div>
+
+    <!--Capstone-->
+
+      <div class="project-item" data-category="capstone">
+      <a href=" https://web-projects.net/odyssey-design/" >
+        <img src="asset/img/space.jpg" class="project-img" alt="capstone-img">
+        <div class="overlay">
+          <p>Collaborated with a team to redesign the ASGC website, contributing to both the design process and implementing the site using WordPress.</p>
+        </div>
+        <div class="project-name">ASGC</div>
+      </a>
+    </div>
+      
+
+  </div>
+</div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+  <h2>My Skills</h2>
+  <div class="skills-wrapper">
+    <div class="skills-group">
+      <h3>Technical Skills</h3>
+      <div class="bubble-container tech">
+        <div class="skill-bubble">HTML</div>
+        <div class="skill-bubble">CSS</div>
+        <div class="skill-bubble">JavaScript</div>
+        <div class="skill-bubble">Java</div>
+        <div class="skill-bubble">GitHub</div>
+        <div class="skill-bubble">Google Sheets</div>
+        <div class="skill-bubble">Data visualization</div>
+
 
       </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#document">Documents</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      
     </div>
-    <div id="home" class="section">
-    <h1>Ayat Alkhatib</h1>
-    <p>Information Science Student | Web Developer</p>
-    <div id="socials" class="btn">
-      <ul>
-        <li> <a href="https://www.linkedin.com/in/ayat-alkhatib">Linkedin</a></li>
-        <li> <a href="https://github.com/ayatnalkhatib">Github</a></li>
-      </ul>
-     </div>
-     
+     <div class="skills-group">
+      <h3>Soft Skills</h3>
+      <div class="bubble-container soft">
+        <div class="skill-bubble">Teamwork</div>
+        <div class="skill-bubble">Attention to Detail</div>
+        <div class="skill-bubble">Communication</div>
+        <div class="skill-bubble">Time Management</div>
+        <div class="skill-bubble">Problem Solving</div>
+        <div class="skill-bubble">Leadership</div>
+        <div class="skill-bubble">Critical Thinking</div>
+        <div class="skill-bubble">Adaptability</div>
+        <div class="skill-bubble">Active Listening</div>
+        <div class="skill-bubble">Willingness to Learn</div>
+
+      </div>
     </div>
   </div>
+</section>
+
+    <!-- About Section -->
     <div id="about" class="section">
       <h2>About Me</h2>
       <div id="about-content">
-      <img src="asset/img/photo.jpg" alt="self-img" class="self-img">
-      <div class="about-info">
-        <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. My journey into tech began when I felt stuck and decided to try something new, and once I discovered programming, I was hooked. Exploring how things work behind the scenes in both front-end and back-end development revealed my passion for problem-solving and creating through code. I love building websites with HTML, CSS, and JavaScript, and I get excited about turning ideas into real, tangible projects. I’m also curious about areas like game development and product design and hope to explore them further as I grow. While I’m still shaping my exact path, I’m driven by learning, building, and continually challenging myself in tech.</p>
+        <img src="asset/img/photo.jpg" alt="self-img" class="self-img">
+        <div class="about-info">
+          <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. My journey into tech began when I felt stuck and decided to try something new, and once I discovered programming, I was hooked. Exploring how things work behind the scenes in both front-end and back-end development revealed my passion for problem-solving and creating through code. I love building websites with HTML, CSS, and JavaScript, and I get excited about turning ideas into real, tangible projects. I’m also curious about areas like game development and product design and hope to explore them further as I grow. While I’m still shaping my exact path, I’m driven by learning, building, and continually challenging myself in tech.</p>
+        </div>
       </div>
     </div>
-    </div>
-    <div id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skill-grid">
-        <div class="column tech-column">
-        <div class="tech-skill">
-          <div class="icon-wrapper">
-          <img src="asset/img/html.png">
-          </div>
-          <span>HTML</span>      
-        </div>
-         <div class="tech-skill">
-          <div class="icon-wrapper">
-          <img src="asset/img/css.png">
-          </div>
-           <span>CSS</span> 
-        </div>
-         <div class="tech-skill">
-          <div class="icon-wrapper">
-          <img src="asset/img/js.png"></div>
-          <span>JavaScript</span> 
-          
-        </div>
-        <div class="tech-skill">
-          <div class="icon-wrapper">
-          <img src="asset/img/java.png"></div>
-          <span>Java</span>
-        </div>
-        </div>
-        <div class="column soft-column">
-         <div class="so-skill">
-          <div class="icon-wrapper">
-            
-          <img src="asset/img/teamwork.png"></div>
-           <span>Teamwork</span> 
-        </div>
-         <div class="so-skill">
-          <div class="icon-wrapper">
 
-          <img src="asset/img/attention-to-detail.png"></div>
-           <span>Attention to Details</span> 
-        </div>
-         <div class="so-skill">
-          <div class="icon-wrapper">
-
-          <img src="asset/img/time-managment.png"></div>
-           <span>Time Management</span> 
-        </div>
-         <div class="so-skill">
-          <div class="icon-wrapper">
-
-          <img src="asset/img/problem-solving.png"></div>
-           <span>Problem Solving</span> 
-        </div>
-        </div>
-         
+    <!-- Documents Section -->
+    <div id="document" class="section">
+      <h1>Ayat Alkhatib</h1>
+      <div class="contact-info-wrapper"> 
+      <div class="contact-info">
+      <div class="format"><a href="documents/resume/resume.docx"> Resume Docx</a></div>
+      <a href="tel:5015043018">(501) 504-3018</a>
+      <a href="mailto:ayatnalkhatib@gmail.com">ayatnalkhatib@gmail.com</a>
+      <a href="https://www.linkedin.com/in/ayat-alkhatib">LinkedIn</a>
+      <div class="format"><a href="documents/resume/resume.pdf"> Resume PDF</a></div>
       </div>
     </div>
-     <div id="document" class="section">
-      <h2><a href="#document">Documents</a></h2>
-      <h4>View or download my resume and cover letter for more about my education and skills.</h4>
-      <div id="doc-tabs" class="sectiontab">
-        <ul>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#cover-letter">Cover letter</a></li>
-        </ul>
-        <menu class="menu">
-          <button class="menu-item active">
-            <div class="menu-icon">
-              <svg class="icons"></svg>
-            </div>
-          </button>
-        </menu>
-      </div>
-      <div id="resume" class="doc-sec">
-        <h3>Resume</h3>
-      </div>
-      <div id="cover-letter" class="doc-sec">
-        <h3>Cover Letter</h3>
-      </div>
+     
+   <div class="doc-wrapper">
+  <div class="resumes-sec">
 
+    <div class="sec-one">
+      <p>Motivated and detail-oriented Information Science student with hands-on experience in front-end web development. Skilled in creating responsive, accessible designs using HTML, CSS, and JavaScript. Passionate about UI/UX design, data-driven solutions, and continuous learning in technology.</p>
+
+      <h3>Skills</h3>
+
+      <h5>Languages & Tools</h5>
+      <p>HTML, CSS, JS, Java, GitHub, Web Design, Data visualization, Google Sheets</p>
+
+      <h5>Soft Skills</h5>
+      <p>Problem-Solving, Leadership, Critical Thinking, Teamwork, Collaboration, Attention to Detail, Adaptability, Active Listening, Willingness to Learn</p>
+
+      <h3>Education</h3>
+      <h5>
+        <span class="p-weight">University of Arkansas at Little Rock</span> - 
+        <span class="style">BASc, Information Science</span>
+      </h5>
+      <p>August 2023 - May 2027, Little Rock</p>
+      <p>Focus on using data and technology to improve decision-making, systems, and user experiences.</p>
     </div>
-    <div id="projects" class="section">
-      <h2><a href="#projects">Projects</a></h2>
-      <div id="project-tabs" class="sectiontab">
-        
-        <ul>
-          <li><a href="#written">Written</a></li>
-          <li><a href="#softskill">Soft Skills</a></li>
-          <li><a href="#web">Web</a></li>
-          <li><a href="#prog">Programming</a></li>
-          <li><a href="#database">Database</a></li>
-        </ul>
-      </div>
-      <div id="written" class="proj-sec" ></div>
-      <div id="softskill" class="proj-sec"></div>
-      <div id="web" class="proj-sec">
-        <ul> 
-          <li><a href="microsite/index.html">Microsite</a></li>
-          <li><a href="spacex/index.html">Space X</a></li>
-        </ul>
-        
-      </div>
-      <div id="prog" class="proj-sec">
-        <ul>
-          <li><a href="calculator/index.html">Calculator</a></li>
-          <li><a href="currency-value-history/index.html">Currency Value History</a></li>
-        </ul>
-      </div>
-      <div id="database" class="proj-sec"></div>
+
+    <div class="sec-two">
+      <h3>Experience</h3>
+
+      <h5>
+        <span class="p-weight">Arkansas Space Grant Consortium</span> — 
+        <span class="style">Web Development Project</span>
+      </h5>
+      <p>Team Project | August 2025 - Nov 2025</p>
+      <ul>
+        <li>Collaborated in a team to redesign the consortium’s website, focusing on usability and accessibility.</li>
+        <li>Analyzed the current site to identify strengths, weaknesses, and areas for improvement.</li>
+        <li>Simplified content and navigation to enhance user experience and align with a specific theme.</li>
+        <li>Implemented design changes and layout improvements using WordPress.</li>
+        <li>Coordinated tasks within the group, ensuring deadlines were met and design consistency maintained.</li>
+      </ul>
+
+      <h5>
+        <span class="p-weight">Mafia Game</span> — 
+        <span class="style">Personal Project</span>
+      </h5>
+      <p>May 2025 - Present</p>
+      <ul>
+        <li>Developed a multiplayer social deduction game with hidden roles (mafia vs. townspeople).</li>
+        <li>Implemented game logic, turn-based interactions, and role-specific abilities.</li>
+        <li>Built a responsive front-end using HTML, CSS, and JavaScript.</li>
+        <li>Focused on user experience, accessibility, and real-time multiplayer interactions.</li>
+      </ul>
+
+      <h3>Awards</h3>
+      <h5><span class="award-s">UA Little Rock Schueck, McCarty, Lexicon, INC. Dean’s Endowed Fund!</span></h5>
     </div>
-   
+
+  </div>
+</div>
+
+
+
+
+      
+</div>
+    <!-- Contact Section -->
     <div id="contact" class="section">
-      <h2>Contact Me</h2>
+      <h2>Feel free to Reach out</h2>
       <form action="https://formspree.io/f/xdklrbbl" method="POST" class="contact-form">
-      <label>Name: <br><input type="text" id="name" name="name" required placeholder="Your Full Name"></label>
-      <label>Email: <br><input type="email" name="email" placeholder="Your Email"></label>
-      <label>Message: <br><textarea name="message" placeholder="Write your message..."></textarea></label>
-      <!-- your other form fields go here -->
-      <button type="submit">Submit</button>
-    </form>
+        <label>Name: <br><input type="text" id="name" name="name" required placeholder="Your Full Name"></label>
+        <label>Email: <br><input type="email" name="email" placeholder="Your Email"></label>
+        <label>Message: <br><textarea name="message" placeholder="Write your message..."></textarea></label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    
+
   </section>
-    <button id="backToTop"><img src="asset/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
-    <script src="asset/js/button.js"></script>
-    <script src="asset/js/script.js"></script>
+
+  <!--Footer-->
+    <footer  id="colophon">
+
+      <div class="footer-con">
+        <a href="https://www.linkedin.com/in/ayat-alkhatib" title="Linkedin"><img src="asset/img/linked-removebg-preview.png" alt="linkedin" ></a>
+        <a href="https://github.com/ayatnalkhatib" title="Github"><img src="asset/img/github-svg.png" alt="github"></a>
+        <a href="documents/cover-letter/cover-letter.pdf" title="Cover Letter"><img src="asset/img/cover_letter-removebg-preview.png" alt="cover-letter"></a>
+        <a href="documents/resume/resume.pdf" title="Resume"><img src="asset/img/resume.png" alt="resume"></a>
+        <a href="#contact" title="Email"><img src="asset/img/email-removebg-preview.png" alt="email"></a>
+      </div>
+      <h6>&copy; 2025 Ayat Alkhatib</h6>
+
+    </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop"><img src="asset/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+
+  <!-- Scripts -->
+  <script src="asset/js/button.js"></script>
+  <script src="asset/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Buffalo River Adventure Co</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Digital Natives">
+  <meta name="title" content="Let's book your next Buffalo River adventure!">
+  <meta name="description" content="Discover the best of Buffalo National River with our cabin and canoe rentals!">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link href="assets/css/style.css" rel="stylesheet" >
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!---Google Font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="primary">
+    <nav class="secondary">
+      <a href="weather-water.html" class="weather-button">Weather & Water Levels</a>
+      <span class="divider">|</span>
+      <span class="phone">Call Us: (479) 747-4959</span>
+    </nav>
+    <section class="wrapper container">
+       <h1><a href="index.html">Buffalo River Adventure Co</a></h1>
+       <!-- Hamburger menu toggle -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <!-- Nav Menu -->
+    <nav class="nav" id="navbar">
+      <ul>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="float.html">Float</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="trails.html">Trail Info</a></li>
+        <li><a href="about.html" class="nav-button">About</a></li>
+      </ul>
+    </nav>
+    </section>
+  </header>
+  <section class="intro">
+    <h1>Float the Buffalo!</h1>
+    <p class="subtitle">Crystal-clear water. Towering bluffs. Unforgettable floats.</p>
+    <p>There's no better way to experience the Buffalo National River than by canoe—and we've got you covered. Whether it's your first time paddling or you're a seasoned floater, our locally made Buffalo Canoes are ready to take you downstream in comfort and style.</p>
+  </section>
+  <section class="two-col-grid container">
+    <div class="image-container">
+      <section class="hero-photo-grid">
+          <img src="assets/img/canoe-girls-700.jpg" alt="cabins" class="grid-item">
+          <img src="assets/img/buffalo-river-canoes-700.jpg" alt="camps" class="grid-item">
+      </section>
+    </div>
+  </section>
+      <section class="canoe-rental container">
+        <h2>Canoe Rental Prices</h2>
+        <p>Our simple pricing makes it easy to plan your trip:</p>
+        <table>
+          <tr>
+            <th>Canoes</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>1 Canoe</td>
+            <td>$67.00</td>
+          </tr>
+          <tr>
+            <td>2 Canoes</td>
+            <td>$134.00</td>
+          </tr>
+          <tr>
+            <td>3 Canoes</td>
+            <td>$201.00</td>
+          </tr>
+          <tr>
+            <td>4 Canoes</td>
+            <td>$268.00</td>
+          </tr>
+          <tr>
+            <td>5 Canoes</td>
+            <td>$335.00</td>
+          </tr>
+          <tr>
+            <td>6 Canoes</td>
+            <td>$402.00</td>
+          </tr>
+          <tr>
+            <td>7 Canoes</td>
+            <td>$455.00</td>
+          </tr>
+          <tr>
+            <td>8 Canoes</td>
+            <td>$536.00</td>
+          </tr>
+          <tr>
+            <td>9 Canoes</td>
+            <td>$603.00</td>
+          </tr>
+          <tr>
+            <td>10 Canoes</td>
+            <td>$670.00</td>
+          </tr>
+        </table>
+  </section>
+  <section class="container">
+    <h2>Rent Canoes</h2>
+    <form action="https://formspree.io/f/mnndjyaa" method="POST" class="booking-form">
+    <label>Your email:
+      <input type="email" name="email">
+    </label>
+    <label>Number of Canoes
+      <select name="dropdown" id="myDropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <label>Date for Reservation
+      <input type="date" name="date">
+    </label>
+  <button type="submit" class="cta-button">Reserve</button>
+  </form>
+  </section>
+  <section class="shuttle-info container">
+    <h2>Shuttle Info</h2>
+    <p>Need a lift? We offer vehicle shuttle service to major river access points. Prices cover one vehicle and can be added to your canoe rental:</p>
+    <ul>
+      <li>From Ponca to:
+        <ul>
+          <li>Steel Creek – $21</li>
+          <li>Kyles – $40</li>
+          <li>Pruitt (or Kyles to Pruitt) – $55</li>
+          <li>Ozark – $61</li>
+          <li>Erbie – $92</li>
+          <li>Hasty – $55</li>
+          <li>Hwy 123 (Carver) – $65</li>
+        </ul>
+      </li>
+    </ul>
+      <a href="https://www.nps.gov/buff/planyourvisit/river-accesses-mileage.htm">🛶 Use the NPS River Mileage Guide to help plan your float distance and trip time.</a>
+  </section>
+  <section class="info-feature container">
+    <h2>Floating Tips</h2>
+    <figure>
+     <img src="assets/img/floating-tips.webp" alt="enthusiastic girl in Canoe with paddle ready to float." class="float-left">
+     <figcaption>Pack light, wear river shoes, and always bring a dry bag!</figcaption>
+    </figure>
+    <ul>
+      <li>No glass containers on the river—bring cans or reusable bottles.</li>
+      <li>Canoe rentals include paddles and life jackets.</li>
+      <li>Shuttle services are for vehicles only—you’ll paddle to your take-out and we’ll make sure your car is waiting when you get there.</li>
+      <li>Cell service is very limited in the area. Plan ahead and screenshot your float route if needed.</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Location</h2>
+    <p>We’re located in a remote, scenic spot near Compton, AR. Cell service and GPS can be spotty—use these coordinates to find us:</p>
+    <p>📍 36°01'33.6"N 93°21'54.6"W </p>
+    <p>📍 Google Map Plus Code: 2JGM+CW Ponca, Arkansas</p>
+    <a href="https://maps.app.goo.gl/ZGRm8hZcprVXJq1q9">📍View on Google Maps</a>
+    <p>Address: 1234 River Road, Ponca, Arkansas</p>
+    <div id="location-frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.652732945525!2d-93.36465958478273!3d36.02485858011607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cd1fdff0d5da35%3A0xb0bbee1d653e9371!2sPonca%2C%20AR%2072670%2C%20USA!5e0!3m2!1sen!2sus!4v1682183940519!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+      <img src="assets/img/buffalo-river-map-950.jpg" alt="Buffalo River Map">
+    </section>
+  
+    <button id="backToTop" onclick="scrollToTop()"><img src="assets/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+    <footer id="colophon">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="site-name">Buffalo River Adventure Co.</span>
+          <ul>
+            <li><a href="weather-water.html">Current Water Levels</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="wildlife.html">Wildlife</a></li>
+            <li><a href="trails.html">Trails</a></li>
+            <li><a href="float.html">Float</a></li>
+            <li><a href="stay.html">Stay</a></li>
+          </ul>
+        </div>
+        <div class="footer-right" id="contact">
+          <form action="https://formspree.io/f/mnnpknaq" method="POST">
+            <label>Email:
+              <input type="email" name="email">
+            </label>
+            <label>Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Contact Us</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; 2025 Buffalo River Adventure Co.</small>
+      </div>
+    </footer>
+  <!--this is a test of live coding we are currently all in the codespace can you see this reply with Y or N -->
+  <!--Yo YES-->
+  <script src="assets/js/button.js"></script>
+
+</body>
+</html>
