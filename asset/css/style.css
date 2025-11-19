@@ -229,7 +229,7 @@ body.scrolled #tabs{
   background-color:#0a192f;
   padding-top: 50px; 
   padding-bottom: 100px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
 }
@@ -238,7 +238,7 @@ body.scrolled #tabs{
   background-color:#3a506b;
   padding-top: 50px; 
   padding-bottom: 100px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   
 }
