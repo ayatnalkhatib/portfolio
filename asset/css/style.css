@@ -305,8 +305,8 @@ body.scrolled #tabs{
   object-fit: cover;
   flex-shrink: 0;    
   float: right;    
-  margin-right:50px;
-  margin-left: 30px;   
+  
+  margin-left: 50px;   
   animation: gentleFloat 3s ease-in-out infinite;
   background: #f0f4f8; 
   transform: scale(1.1);
