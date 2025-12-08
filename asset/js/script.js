@@ -38,6 +38,5 @@ $(document).ready(function() {
 
 
 // menu
-    function toggleMenu() {
-            document.querySelector("nav ul").classList.toggle("show");
-        }
+function toggleMenu() {
+  document.querySelector("#tabs ul").classList.toggle("active");}

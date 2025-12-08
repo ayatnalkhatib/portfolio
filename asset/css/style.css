@@ -916,3 +916,36 @@ nav ul li a {
         padding: 10px 0;
     }
 }
+
+
+@media (max-width: 900px) {
+  #tabs ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  #tabs ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+  }
+}
