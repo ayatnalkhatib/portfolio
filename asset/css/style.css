@@ -845,91 +845,188 @@ footer h6 {
   filter: brightness(1) invert(0); 
 }
 
-/* HAMBURGER MENU FIX            */
 
-.sectiontab {
-  position: relative;
-  background-color: #fff; 
-  z-index: 1000;
-  padding: 0 20px;
-}
+/* =============================
+   Responsive Styles (Tablet & Mobile)
+============================= */
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  width: 30px;
-  height: 25px;
-  margin-left: auto;
-}
+/* Tablet (up to 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Navbar & Logo */
+  #tabs ul {
+    gap: 16px;
+    font-size: 1rem;
+  }
+  .logo img {
+    height: 80px;
+  }
 
-.hamburger div {
-  background-color: #000;
-  height: 4px;
-  border-radius: 2px;
-  transition: 0.3s;
-}
+  /* Home Section */
+  #home h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -30px;
+  }
+  #home h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .pitch .line {
+    font-size: 1rem;
+    text-align: center;
+  }
 
-.hamburger.active div:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.hamburger.active div:nth-child(2) { opacity: 0; }
-.hamburger.active div:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
+  /* About Section */
+  #about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .self-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .about-info {
+    margin-left: 0;
+    padding: 10px 15px;
+  }
 
-.sectiontab ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
-
-/* Responsive menu */
-@media (max-width: 992px) {
-  .hamburger { display: flex; }
-
-  .sectiontab ul {
-    display: none;
+  /* Skills Section */
+  .skills-wrapper {
     flex-direction: column;
     gap: 20px;
-    position: absolute;
-    top: 60px; 
-    left: 0;
+  }
+  .skills-group {
+    width: 90%;
+  }
+
+  /* Projects Section */
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .project-img {
+    height: 150px;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: 20px;
+    gap: 20px;
+  }
+  .contact-form input, 
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .contact-form button {
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
+
+  /* Footer */
+  .footer-con a {
+    width: 50px;
+    height: 50px;
+  }
+  #backToTop {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media screen and (max-width: 768px) {
+  #tabs ul {
+    gap: 12px;
+    font-size: 0.9rem;
+  }
+  .logo img {
+    height: 70px;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+    margin-top: -20px;
+  }
+  #home h4 {
+    font-size: 1rem;
+  }
+  .pitch .line {
+    font-size: 0.9rem;
+  }
+
+  .self-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .skills-group {
+    width: 95%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  .project-img {
+    height: 130px;
+  }
+
+  .contact-form input, 
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .contact-form button {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  .footer-con a {
+    width: 45px;
+    height: 45px;
+  }
+  #backToTop {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #document h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .contact-info-wrapper {
+    gap: 15px;
+  }
+
+  .contact-info .format a {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #document h1 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .contact-info a {
     width: 100%;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 10px 0;
   }
-
-  .sectiontab ul.show {
-    display: flex;
-  }
-}
-
-/* DOCUMENT / RESUME FIX         */
-
-#document .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#document .contact-info a {
-  display: block;
-  padding: 10px 15px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #000;
-  font-weight: 500;
-}
-
-#document .contact-info a:hover {
-  background-color: #ddd;
 }

@@ -36,11 +36,3 @@ $(document).ready(function() {
   });
 });
 
-
-// menu
-function toggleMenu() {
-  const menu = document.querySelector(".sectiontab ul");
-  const ham = document.querySelector(".hamburger");
-  menu.classList.toggle("show");
-  ham.classList.toggle("active");
-}
