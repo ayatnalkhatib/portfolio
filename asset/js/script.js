@@ -39,5 +39,8 @@ $(document).ready(function() {
 
 // menu
 function toggleMenu() {
-    document.querySelector(".sectiontab ul").classList.toggle("show");
+  const menu = document.querySelector(".sectiontab ul");
+  const ham = document.querySelector(".hamburger");
+  menu.classList.toggle("show");
+  ham.classList.toggle("active");
 }
