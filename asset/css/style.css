@@ -847,157 +847,72 @@ footer h6 {
 
 
 
-/*    RESPONSIVE — TABLETS     */
-@media (max-width: 992px) {
-
-  #tabs {
-    padding: 15px 0;
-  }
-
-  .sectiontab ul, .proj-sec ul {
-    gap: 25px;
-    font-size: 1.2rem;
-  }
-
-  #home h1 {
-    font-size: 4rem;
-    margin-top: -40px;
-  }
-
-  .self-img {
-    width: 260px;
-    height: 260px;
-    margin-left: 30px;
-  }
-
-  .about-info {
-    margin-left: 10px;
-    max-width: 100%;
-  }
-
-  .about-info p {
-    font-size: 1.3rem;
-  }
-
-  .skills-wrapper {
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-
-  .skills-group {
-    min-width: 100%;
-  }
+/* NAVBAR BASE STYLES    */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    position: relative;
 }
 
-/*       RESPONSIVE — MOBILE     */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+/* HAMBURGER BUTTON      */
+.hamburger {
+    width: 30px;
+    display: none;          
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+}
+
+/* MOBILE MENU           */
 @media (max-width: 768px) {
 
-  .sectiontab ul {
-    gap: 15px;
-    font-size: 1rem;
-  }
+    .hamburger {
+        display: flex;
+    }
 
-  #home h1 {
-    font-size: 3rem;
-  }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        gap: 15px;
+        z-index: 50;
+    }
 
-  #home h4 {
-    font-size: 1.3rem;
-  }
+    nav ul.show {
+        display: flex;
+    }
 
-  .pitch .line {
-    font-size: 0.9rem;
-  }
-
-  .self-img {
-    width: 200px;
-    height: 200px;
-    float: none;
-    margin: 20px auto;
-    display: block;
-  }
-
-  .about-info {
-    margin-left: 0;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .about-info p {
-    text-align: center;
-    font-size: 1.1rem;
-  }
-
-  .skills-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .skills-group {
-    min-width: 100%;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-name {
-    font-size: 14px;
-  }
-
-  .contact-form {
-    padding: 20px;
-    gap: 30px;
-  }
-
-  .contact-form label {
-    font-size: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;
-  }
-}
-
-/* SMALL PHONES — VERY TINY      */
-@media (max-width: 480px) {
-
-  #tabs {
-    height: auto;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo img {
-    height: 90px;
-  }
-
-  .sectiontab ul {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  #home h1 {
-    font-size: 2.5rem;
-  }
-
-  #home h4 {
-    font-size: 1rem;
-  }
-
-  .btn ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .btn ul li a {
-    padding: 12px 20px;
-    font-size: 1rem;
-  }
-
-  .contact-form button {
-    font-size: 0.9rem;
-    padding: 12px 15px;
-  }
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+    }
 }

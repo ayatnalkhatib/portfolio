@@ -37,3 +37,7 @@ $(document).ready(function() {
 });
 
 
+// menu
+    function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
