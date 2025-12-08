@@ -38,3 +38,6 @@ $(document).ready(function() {
 
 
 // menu
+function toggleMenu() {
+    document.querySelector(".sectiontab ul").classList.toggle("show");
+}
