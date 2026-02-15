@@ -454,6 +454,16 @@ body.scrolled #tabs{
   font-style: normal;
 }
 
+.p-weight a {
+  color: white;          
+  text-decoration: none;   
+ 
+}
+.p-weight a:hover {
+  color: #d5e8ff;          
+  text-decoration: underline; /* Optional underline on hover */
+}
+
 .style{
   font-weight: 300px;
   font-size: 16px;
@@ -479,6 +489,8 @@ body.scrolled #tabs{
   text-decoration: none;
   transition: all 0.3s ease;
 }
+
+
 
 .format a:hover{
   background-color: #fff;
