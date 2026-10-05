@@ -1,62 +1,55 @@
-$("#myform").validate({
-    
-});
+$("#myform").validate({});
 
-function calculate(){
-    "use strict"
-     if ($("#myform").valid()){
-        let operand1 = document.getElementById("Operand1").value;
-        let operand2 = document.getElementById("Operand2").value;
+function calculate() {
+  "use strict";
+  if ($("#myform").valid()) {
+    let operand1 = document.getElementById("Operand1").value;
+    let operand2 = document.getElementById("Operand2").value;
 
-        let operand1fp = parseFloat(operand1);
-        let operand2fp = parseFloat(operand2);
+    let operand1fp = parseFloat(operand1);
+    let operand2fp = parseFloat(operand2);
 
-        let operator;
-            if (document.getElementById("addition").checked){
-                operator = "plus";
-        }
-            if (document.getElementById("subtraction").checked){
-                operator = "minus";
-            }
+    let operator;
+    if (document.getElementById("addition").checked) {
+      operator = "plus";
+    }
+    if (document.getElementById("subtraction").checked) {
+      operator = "minus";
+    }
 
-            if (document.getElementById("multiplication").checked){
-                operator = "multiply"
-            }
+    if (document.getElementById("multiplication").checked) {
+      operator = "multiply";
+    }
 
-            if (document.getElementById("division").checked){
-                operator = "divided"
-            }
+    if (document.getElementById("division").checked) {
+      operator = "divided";
+    }
 
-            let result;
+    let result;
 
-            if (operator == "plus"){
-                result = operand1fp + operand2fp;
-            }
-            else if (operator == "minus"){
-                result = operand1fp - operand2fp;
-            }
-            else if (operator == "multiply"){
-                result = operand1fp * operand2fp;
-            }
-            else if (operator == "divided"){
-                result = operand1fp / operand2fp;
-            }
+    if (operator == "plus") {
+      result = operand1fp + operand2fp;
+    } else if (operator == "minus") {
+      result = operand1fp - operand2fp;
+    } else if (operator == "multiply") {
+      result = operand1fp * operand2fp;
+    } else if (operator == "divided") {
+      result = operand1fp / operand2fp;
+    }
 
-            document.getElementById("Result").innerHTML = result.toString();
-
-     }
-
+    document.getElementById("Result").innerHTML = result.toString();
+  }
 }
 
-function clearform(){
-    document.getElementById("Operand1").value = "";
-    document.getElementById("Operand2").value = "";
-    document.getElementById("Operand1Error").innerHTML = "";
-    document.getElementById("Operand2Error").innerHTML = "";
-    document.getElementById("OperatorError").innerHTML = "";
-    document.getElementById("addition").checked = false;
-    document.getElementById("subtraction").checked = false;
-    document.getElementById("multiplication").checked = false;
-    document.getElementById("division").checked = false;
-    document.getElementById("Result").innerHTML = "";
+function clearform() {
+  document.getElementById("Operand1").value = "";
+  document.getElementById("Operand2").value = "";
+  document.getElementById("Operand1Error").innerHTML = "";
+  document.getElementById("Operand2Error").innerHTML = "";
+  document.getElementById("OperatorError").innerHTML = "";
+  document.getElementById("addition").checked = false;
+  document.getElementById("subtraction").checked = false;
+  document.getElementById("multiplication").checked = false;
+  document.getElementById("division").checked = false;
+  document.getElementById("Result").innerHTML = "";
 }

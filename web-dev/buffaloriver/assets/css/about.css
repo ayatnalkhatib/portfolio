@@ -1,29 +1,26 @@
-
 section.two-col-layout {
-    max-width: 1200px;
-    width: 80vw;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  max-width: 1200px;
+  width: 80vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 section.two-col-layout > * {
-    margin: auto;
+  margin: auto;
 }
 
 section#about-intro > * {
-    width: 80%;
+  width: 80%;
 }
 
 .emphasized-text {
-    font-size: 1.9em;
-    font-weight: 700;
-    font-family: merriweather;
+  font-size: 1.9em;
+  font-weight: 700;
+  font-family: merriweather;
 }
 
 h2.about-grid {
-    margin-left: 45px;
+  margin-left: 45px;
 }
-
-

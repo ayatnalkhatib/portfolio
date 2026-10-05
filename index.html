@@ -1,471 +1,751 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Ayat Alkhatib Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Portfolio">
-  <meta name="author" content="Ayat Alkhatib">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="asset/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"> 
-  <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <section id="container"> 
-    <!-- Navbar + Home hero -->
-    <div id="navbar">
-      <div id="tabs" class="sectiontab">
-        <div class="logo">
-          <a href="#home"><img src="asset/img/logo.png" alt="Logo"></a>
-        </div>
+  <head>
+    <title>Ayat Alkhatib Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Ayat Alkhatib" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="container">
+      <!-- Navbar + Home hero -->
+      <div id="navbar">
+        <div id="tabs" class="sectiontab">
+          <div class="logo">
+            <a href="#home"><img src="asset/img/logo.png" alt="Logo" /></a>
+          </div>
 
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#document">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Home section remains inside navbar -->
-      <div id="home" class="section">
-        <h1>Ayat Alkhatib 🤗</h1>
-        <h4>Information Science Student | Web Developer</h4>
-          <p class="pitch">
-            <span class="line">I’m an Information Science student who enjoys creating clean, accessible, and user-friendly web experiences.</span>
-            <span class="line">I love learning new technologies, experimenting with design, and turning ideas into real projects.</span>
-          </p>
-        <div id="socials" class="btn">
           <ul>
-            <li><a href="documents/resume/resume.pdf"> View Resume 📇</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#document">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </div>
 
-    <!-- Projects Section -->
-
-<div id="projects" class="section">
-  <h2>Projects</h2>
-
- 
-    <div class="filter-buttons">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="written">Written</button>
-        <button data-filter="softskill">Soft Skills</button>
-        <button data-filter="web">Web</button>
-        <button data-filter="prog">Programming</button>
-        <button data-filter="database">Database</button>
-        <button data-filter="capstone">Capstone</button>
-    </div>
-
-  <div class="project-grid">
-
-    <!--Written Projects-->
-      <div class="project-item" data-category="written">
-      <a href="written/finding-home/finding-home.pdf">
-        <img src="written/img/home.jpeg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>A narrative essay that examines cultural adjustment and emotional growth after relocating from the Middle East to the United States.</p>
-        </div>
-        <div class="project-name">Finding Home</div>
-      </a>
-    </div>
-
-      <div class="project-item" data-category="written">
-      <a href="written/dialogic-argument/final-dialogic-argument.pdf">
-        <img src="written/img/diao.jpg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>This dialogic argument highlights the need to balance technology and traditional learning to give students the best educational experience.</p>
-        </div>
-        <div class="project-name">Balancing Technology and Tradition</div>
-      </a>
-    </div>
-
-
-    <div class="project-item" data-category="written">
-      <a href="written/cultural-festivals/cultural-fest-essay.pdf">
-        <img src="written/img/cultural-fes.jpg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>This project highlights how cultural festivals foster community connections, celebrate traditions, and support local culture and economy.</p>
-        </div>
-        <div class="project-name">Cultural Festivals</div>
-      </a>
-    </div>
-
-
-      <div class="project-item" data-category="written">
-      <a href="written/project-charter/uv-tracker.pdf">
-        <img src="written/img/project-chart.jpg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>Develop a web-based UV tracker for patients to monitor past, current, and projected exposure to support health and safety.</p>
-        </div>
-        <div class="project-name">Project charter</div>
-      </a>
-    </div>
-
-         <div class="project-item" data-category="written">
-      <a href="written/ai-assisted-game-development/ai-assisted-game-development.pdf">
-        <img src="written/img/game-dev.jpg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>This report outlines the development of an AI-assisted game and the ethical role of AI as a collaborator.</p>
-        </div>
-        <div class="project-name">AI Game Experiment</div>
-      </a>
-    </div>
-
-    <div class="project-item" data-category="written">
-      <a href="written/fake-news/fakenews_a_literaturereview.pdf">
-        <img src="written/img/fake-news.jpeg" class="project-img" alt="written-img">
-        <div class="overlay">
-          <p>APA-style literature review on fake news comparing three journal articles and their key findings.</p>
-        </div>
-        <div class="project-name">Fake News: A Literature Review</div>
-      </a>
-    </div>
-
-
-    <!--Soft Skills Projects-->
-
-     <div class="project-item" data-category="softskill">
-      <a href="soft-skill/human-computer-interface/interface-final-development.pdf">
-        <img src="soft-skill/img/seo-galaxy-R10-3wYGgEE-unsplash.jpg" class="project-img" alt="softskill-img">
-        <div class="overlay">
-          <p>Presented our Java project interface as a team using Google Slides, emphasizing collaboration and communication.</p>
-        </div>
-        <div class="project-name">Java Interface Presentation</div>
-      </a>
-    </div>
-
-      <div class="project-item" data-category="softskill">
-      <a href="soft-skill/buffaloriver-prese/Digital-Natives-Web-Presentation.pptx.pdf">
-        <img src="soft-skill/img/present-buffalo.jpg" class="project-img" alt="softskill-img">
-        <div class="overlay">
-          <p>Presented our Buffalo River website as a team using Google Slides, emphasizing collaboration and communication.</p>
-        </div>
-        <div class="project-name">Buffalo River Presentation</div>
-      </a>
-    </div>
-
-    <div class="project-item" data-category="softskill">
-      <a href="soft-skill/uv-tracker/uv-tracker.pdf">
-        <img src="soft-skill/img/uv.png" class="project-img" alt="softskill-img">
-        <div class="overlay">
-          <p>A presentation on a web-based UV Tracker tool, demonstrating design, usability, and human-computer interaction principles to help patients manage sun exposure.</p>
-        </div>
-        <div class="project-name">Uv-Tracker Presentation</div>
-      </a>
-    </div>
-
-    
-
-    <!--Web Projects-->
-    <div class="project-item" data-category="web">
-      <a href="web-dev/microsite/index.html">
-        <img src="asset/img/micrositebg.jpg" class="project-img" alt="web-img">
-        <div class="overlay">
-          <p>A microsite showcasing HTML, CSS, and JavaScript skills with AI-generated content. Focused on demonstrating coding ability.</p>
-        </div>
-        <div class="project-name">Microsite</div>
-      </a>
-    </div>
-
-
-
-    <div class="project-item" data-category="web">
-      <a href="web-dev/buffaloriver/index.html">
-        <img src="asset/img/buffalo.jpg" class="project-img"  alt="web-img">
-        <div class="overlay">
-          <p>Collaborated in a team to design and build a Buffalo River website using HTML, CSS, and JavaScript, focusing on layout, interactivity, and visual presentation.</p>
-        </div>
-        <div class="project-name">buffaloriver</div>
-      </a>
-    </div>
-
-    <div class="project-item" data-category="web">
-      <a href="web-dev/web-1/index.html">
-        <img src="asset/img/web-1.jpg" class="project-img"  alt="web-img">
-        <div class="overlay">
-          <p>This project showcases a simple webpage built with HTML and CSS, featuring navigation links, organized content, and a styled layout.</p>
-        </div>
-        <div class="project-name">Web-1</div>
-      </a>
-    </div>
-
-    <!--Programming Projects-->
-    <div class="project-item" data-category="prog">
-      <a href="program/calculator/index.html">
-        <img src="asset/img/calculator.jpg" class="project-img"  alt="prog-img">
-        <div class="overlay">
-          <p>A JavaScript calculator with addition, subtraction, multiplication, and division. Includes alerts and clear button for easy use.</p>
-        </div>
-        <div class="project-name">Calculator</div>
-      </a>
-    </div>
-
-    <div class="project-item" data-category="prog">
-      <a href="program/currency-value-history/index.html">
-        <img src="asset/img/currency-value.jpg" class="project-img" alt="prog-img">
-        <div class="overlay">
-          <p>A tool to compare currency exchange rates over time with interactive charts and date selection. Built with JavaScript.</p>
-        </div>
-        <div class="project-name">Currency History</div>
-      </a>
-    </div>
-
-    <div class="project-item" data-category="prog">
-      <a href="program/python/student-score-tracker/student-score-tracker.zip">
-        <img src="asset/img/score-tracker.jpg" class="project-img" alt="prog-img">
-        <div class="overlay">
-          <p>A Python program that reads student data and scores from text files, calculates averages and letter grades, and displays a formatted table of results.</p>
-        </div>
-        <div class="project-name">Student Score Tracker</div>
-      </a>
-    </div>
-
-
-    
-    <div class="project-item" data-category="prog">
-      <a href="program/java/interfacepresentation.zip">
-        <img src="asset/img/java.jpg" class="project-img" alt="prog-img">
-        <div class="overlay">
-          <p>A collaborative Java Swing project where our team built a multi-panel interface for managing travel packages and experiences, with each member implementing at least one functional interactive event.</p>
-        </div>
-        <div class="project-name">Interface Development</div>
-      </a>
-    </div>
-
-    <!--DataBase Projects-->
-    <div class="project-item" data-category="database">
-      <a href="database/south-aniversity-autorama-safety-products/autorama-safety.pdf">
-        <img src="database/img/autorama-sales.png" class="project-img" alt="database-img">
-        <div class="overlay">
-          <p>Developed a Google Sheets project to calculate and visualize retail product values, totals, and percentages using formulas and charts.</p>
-        </div>
-        <div class="project-name">Autorama Sales Report</div>
-      </a>
-    </div>
-
-      <div class="project-item" data-category="database">
-      <a href="database/ticket-sale/ticket-sales.pdf">
-        <img src="database/img/tickets-sales.png" class="project-img" alt="database-img">
-        <div class="overlay">
-          <p>Created a multi-sheet Google Sheets workbook to calculate and visualize ticket sales across three locations using formulas, absolute referencing, and charts.</p>
-        </div>
-        <div class="project-name">Ticket Sale</div>
-      </a>
-    </div>
-
-      <div class="project-item" data-category="database">
-      <a href="database/jewelry/jewelry.pdf" >
-        <img src="database/img/jewelry.png" class="project-img" alt="database-img">
-        <div class="overlay">
-          <p>Built a detailed Google Sheets project for inventory management and data analysis using formulas, conditional formatting, and visualizations.</p>
-        </div>
-        <div class="project-name">Jewelry</div>
-      </a>
-    </div>
-
-     <div class="project-item" data-category="database">
-      <a href="database/online-car-database/online-car-database-project.pdf" >
-        <img src="database/img/online-car-rental.jpg" class="project-img" alt="database-img">
-        <div class="overlay">
-          <p>This project implements a car rental system in an Oracle database using a 3NF-certified relational schema. It includes eight SQL queries designed to manage inventory and analyze rental transactions.</p>
-        </div>
-        <div class="project-name">online Car Database</div>
-      </a>
-    </div>
-
-    <!--Capstone-->
-
-      <div class="project-item" data-category="capstone">
-      <a href=" https://web-projects.net/odyssey-design/" >
-        <img src="asset/img/space.jpg" class="project-img" alt="capstone-img">
-        <div class="overlay">
-          <p>Collaborated with a team to redesign the ASGC website, contributing to both the design process and implementing the site using WordPress.</p>
-        </div>
-        <div class="project-name">ASGC</div>
-      </a>
-    </div>
-
-      <div class="project-item" data-category="capstone">
-      <a href="capstone/uv-tracker/index.html" >
-        <img src="asset/img/uv.jpg" class="project-img" alt="capstone-img">
-        <div class="overlay">
-          <p>Using HTML, CSS, and JavaScript, this UV Tracker shows past and future UV index levels for searched cities. It includes color-coded tables and interactive charts for easy visualization.</p>
-        </div>
-        <div class="project-name">UV Index Tracker Tool</div>
-      </a>
-    </div>
-      
-      
-
-  </div>
-</div>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-  <h2>My Skills</h2>
-  <div class="skills-wrapper">
-    <div class="skills-group">
-      <h3>Technical Skills</h3>
-      <div class="bubble-container tech">
-        <div class="skill-bubble">HTML</div>
-        <div class="skill-bubble">CSS</div>
-        <div class="skill-bubble">JavaScript</div>
-        <div class="skill-bubble">Java</div>
-        <div class="skill-bubble">GitHub</div>
-        <div class="skill-bubble">Google Sheets</div>
-        <div class="skill-bubble">Data visualization</div>
-        <div class="skill-bubble">Python</div>
-        <div class="skill-bubble">APIS</div>
-        
-
-
-      </div>
-    </div>
-     <div class="skills-group">
-      <h3>Soft Skills</h3>
-      <div class="bubble-container soft">
-        <div class="skill-bubble">Teamwork</div>
-        <div class="skill-bubble">Attention to Detail</div>
-        <div class="skill-bubble">Communication</div>
-        <div class="skill-bubble">Time Management</div>
-        <div class="skill-bubble">Problem Solving</div>
-        <div class="skill-bubble">Leadership</div>
-        <div class="skill-bubble">Critical Thinking</div>
-        <div class="skill-bubble">Adaptability</div>
-        <div class="skill-bubble">Active Listening</div>
-        <div class="skill-bubble">Willingness to Learn</div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- About Section -->
-    <div id="about" class="section">
-      <h2>About Me</h2>
-      <div id="about-content">
-        <img src="asset/img/photo.jpg" alt="self-img" class="self-img">
-        <div class="about-info">
-          <p>I’m a student at UALR majoring in Information Science with a minor in Information Technology. My journey into tech began when I felt stuck and decided to try something new, and once I discovered programming, I was hooked. Exploring how things work behind the scenes in both front-end and back-end development revealed my passion for problem-solving and creating through code. I love building websites with HTML, CSS, and JavaScript, and I get excited about turning ideas into real, tangible projects. I’m also curious about areas like game development and product design and hope to explore them further as I grow. While I’m still shaping my exact path, I’m driven by learning, building, and continually challenging myself in tech.</p>
+        <!-- Home section remains inside navbar -->
+        <div id="home" class="section">
+          <h1>Ayat Alkhatib 🤗</h1>
+          <h4>Information Science Student | Web Developer</h4>
+          <p class="pitch">
+            <span class="line"
+              >I’m an Information Science student who enjoys creating clean,
+              accessible, and user-friendly web experiences.</span
+            >
+            <span class="line"
+              >I love learning new technologies, experimenting with design, and
+              turning ideas into real projects.</span
+            >
+          </p>
+          <div id="socials" class="btn">
+            <ul>
+              <li><a href="documents/resume/resume.pdf"> View Resume 📇</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Documents Section -->
-    <div id="document" class="section">
-      <h1>Ayat Alkhatib</h1>
-      <div class="contact-info-wrapper"> 
-      <div class="contact-info">
-      <div class="format"><a href="documents/resume/resume.docx"> Resume Docx</a></div>
-      <a href="tel:5015043018">(501) 504-3018</a>
-      <a href="mailto:ayatnalkhatib@gmail.com">ayatnalkhatib@gmail.com</a>
-      <a href="https://ayatnalkhatib.github.io/portfolio/">Portfolio</a>
-      <div class="format"><a href="documents/resume/resume.pdf"> Resume PDF</a></div>
+      <!-- Projects Section -->
+
+      <div id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="filter-buttons">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="written">Written</button>
+          <button data-filter="softskill">Soft Skills</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="prog">Programming</button>
+          <button data-filter="database">Database</button>
+          <button data-filter="capstone">Capstone</button>
+        </div>
+
+        <div class="project-grid">
+          <!--Written Projects-->
+          <div class="project-item" data-category="written">
+            <a href="written/finding-home/finding-home.pdf">
+              <img
+                src="written/img/home.jpeg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  A narrative essay that examines cultural adjustment and
+                  emotional growth after relocating from the Middle East to the
+                  United States.
+                </p>
+              </div>
+              <div class="project-name">Finding Home</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="written">
+            <a href="written/dialogic-argument/final-dialogic-argument.pdf">
+              <img
+                src="written/img/diao.jpg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  This dialogic argument highlights the need to balance
+                  technology and traditional learning to give students the best
+                  educational experience.
+                </p>
+              </div>
+              <div class="project-name">Balancing Technology and Tradition</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="written">
+            <a href="written/cultural-festivals/cultural-fest-essay.pdf">
+              <img
+                src="written/img/cultural-fes.jpg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  This project highlights how cultural festivals foster
+                  community connections, celebrate traditions, and support local
+                  culture and economy.
+                </p>
+              </div>
+              <div class="project-name">Cultural Festivals</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="written">
+            <a href="written/project-charter/uv-tracker.pdf">
+              <img
+                src="written/img/project-chart.jpg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  Develop a web-based UV tracker for patients to monitor past,
+                  current, and projected exposure to support health and safety.
+                </p>
+              </div>
+              <div class="project-name">Project charter</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="written">
+            <a
+              href="written/ai-assisted-game-development/ai-assisted-game-development.pdf"
+            >
+              <img
+                src="written/img/game-dev.jpg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  This report outlines the development of an AI-assisted game
+                  and the ethical role of AI as a collaborator.
+                </p>
+              </div>
+              <div class="project-name">AI Game Experiment</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="written">
+            <a href="written/fake-news/fakenews_a_literaturereview.pdf">
+              <img
+                src="written/img/fake-news.jpeg"
+                class="project-img"
+                alt="written-img"
+              />
+              <div class="overlay">
+                <p>
+                  APA-style literature review on fake news comparing three
+                  journal articles and their key findings.
+                </p>
+              </div>
+              <div class="project-name">Fake News: A Literature Review</div>
+            </a>
+          </div>
+
+          <!--Soft Skills Projects-->
+
+          <div class="project-item" data-category="softskill">
+            <a
+              href="soft-skill/human-computer-interface/interface-final-development.pdf"
+            >
+              <img
+                src="soft-skill/img/seo-galaxy-R10-3wYGgEE-unsplash.jpg"
+                class="project-img"
+                alt="softskill-img"
+              />
+              <div class="overlay">
+                <p>
+                  Presented our Java project interface as a team using Google
+                  Slides, emphasizing collaboration and communication.
+                </p>
+              </div>
+              <div class="project-name">Java Interface Presentation</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="softskill">
+            <a
+              href="soft-skill/buffaloriver-prese/Digital-Natives-Web-Presentation.pptx.pdf"
+            >
+              <img
+                src="soft-skill/img/present-buffalo.jpg"
+                class="project-img"
+                alt="softskill-img"
+              />
+              <div class="overlay">
+                <p>
+                  Presented our Buffalo River website as a team using Google
+                  Slides, emphasizing collaboration and communication.
+                </p>
+              </div>
+              <div class="project-name">Buffalo River Presentation</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="softskill">
+            <a href="soft-skill/uv-tracker/uv-tracker.pdf">
+              <img
+                src="soft-skill/img/uv.png"
+                class="project-img"
+                alt="softskill-img"
+              />
+              <div class="overlay">
+                <p>
+                  A presentation on a web-based UV Tracker tool, demonstrating
+                  design, usability, and human-computer interaction principles
+                  to help patients manage sun exposure.
+                </p>
+              </div>
+              <div class="project-name">Uv-Tracker Presentation</div>
+            </a>
+          </div>
+
+          <!--Web Projects-->
+          <div class="project-item" data-category="web">
+            <a href="web-dev/microsite/index.html">
+              <img
+                src="asset/img/micrositebg.jpg"
+                class="project-img"
+                alt="web-img"
+              />
+              <div class="overlay">
+                <p>
+                  A microsite showcasing HTML, CSS, and JavaScript skills with
+                  AI-generated content. Focused on demonstrating coding ability.
+                </p>
+              </div>
+              <div class="project-name">Microsite</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="web">
+            <a href="web-dev/buffaloriver/index.html">
+              <img
+                src="asset/img/buffalo.jpg"
+                class="project-img"
+                alt="web-img"
+              />
+              <div class="overlay">
+                <p>
+                  Collaborated in a team to design and build a Buffalo River
+                  website using HTML, CSS, and JavaScript, focusing on layout,
+                  interactivity, and visual presentation.
+                </p>
+              </div>
+              <div class="project-name">buffaloriver</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="web">
+            <a href="web-dev/web-1/index.html">
+              <img
+                src="asset/img/web-1.jpg"
+                class="project-img"
+                alt="web-img"
+              />
+              <div class="overlay">
+                <p>
+                  This project showcases a simple webpage built with HTML and
+                  CSS, featuring navigation links, organized content, and a
+                  styled layout.
+                </p>
+              </div>
+              <div class="project-name">Web-1</div>
+            </a>
+          </div>
+
+          <!--Programming Projects-->
+          <div class="project-item" data-category="prog">
+            <a href="program/calculator/index.html">
+              <img
+                src="asset/img/calculator.jpg"
+                class="project-img"
+                alt="prog-img"
+              />
+              <div class="overlay">
+                <p>
+                  A JavaScript calculator with addition, subtraction,
+                  multiplication, and division. Includes alerts and clear button
+                  for easy use.
+                </p>
+              </div>
+              <div class="project-name">Calculator</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="prog">
+            <a href="program/currency-value-history/index.html">
+              <img
+                src="asset/img/currency-value.jpg"
+                class="project-img"
+                alt="prog-img"
+              />
+              <div class="overlay">
+                <p>
+                  A tool to compare currency exchange rates over time with
+                  interactive charts and date selection. Built with JavaScript.
+                </p>
+              </div>
+              <div class="project-name">Currency History</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="prog">
+            <a
+              href="program/python/student-score-tracker/student-score-tracker.zip"
+            >
+              <img
+                src="asset/img/score-tracker.jpg"
+                class="project-img"
+                alt="prog-img"
+              />
+              <div class="overlay">
+                <p>
+                  A Python program that reads student data and scores from text
+                  files, calculates averages and letter grades, and displays a
+                  formatted table of results.
+                </p>
+              </div>
+              <div class="project-name">Student Score Tracker</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="prog">
+            <a href="program/java/interfacepresentation.zip">
+              <img
+                src="asset/img/java.jpg"
+                class="project-img"
+                alt="prog-img"
+              />
+              <div class="overlay">
+                <p>
+                  A collaborative Java Swing project where our team built a
+                  multi-panel interface for managing travel packages and
+                  experiences, with each member implementing at least one
+                  functional interactive event.
+                </p>
+              </div>
+              <div class="project-name">Interface Development</div>
+            </a>
+          </div>
+
+          <!--DataBase Projects-->
+          <div class="project-item" data-category="database">
+            <a
+              href="database/south-aniversity-autorama-safety-products/autorama-safety.pdf"
+            >
+              <img
+                src="database/img/autorama-sales.png"
+                class="project-img"
+                alt="database-img"
+              />
+              <div class="overlay">
+                <p>
+                  Developed a Google Sheets project to calculate and visualize
+                  retail product values, totals, and percentages using formulas
+                  and charts.
+                </p>
+              </div>
+              <div class="project-name">Autorama Sales Report</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="database">
+            <a href="database/ticket-sale/ticket-sales.pdf">
+              <img
+                src="database/img/tickets-sales.png"
+                class="project-img"
+                alt="database-img"
+              />
+              <div class="overlay">
+                <p>
+                  Created a multi-sheet Google Sheets workbook to calculate and
+                  visualize ticket sales across three locations using formulas,
+                  absolute referencing, and charts.
+                </p>
+              </div>
+              <div class="project-name">Ticket Sale</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="database">
+            <a href="database/jewelry/jewelry.pdf">
+              <img
+                src="database/img/jewelry.png"
+                class="project-img"
+                alt="database-img"
+              />
+              <div class="overlay">
+                <p>
+                  Built a detailed Google Sheets project for inventory
+                  management and data analysis using formulas, conditional
+                  formatting, and visualizations.
+                </p>
+              </div>
+              <div class="project-name">Jewelry</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="database">
+            <a
+              href="database/online-car-database/online-car-database-project.pdf"
+            >
+              <img
+                src="database/img/online-car-rental.jpg"
+                class="project-img"
+                alt="database-img"
+              />
+              <div class="overlay">
+                <p>
+                  This project implements a car rental system in an Oracle
+                  database using a 3NF-certified relational schema. It includes
+                  eight SQL queries designed to manage inventory and analyze
+                  rental transactions.
+                </p>
+              </div>
+              <div class="project-name">online Car Database</div>
+            </a>
+          </div>
+
+          <!--Capstone-->
+
+          <div class="project-item" data-category="capstone">
+            <a href=" https://web-projects.net/odyssey-design/">
+              <img
+                src="asset/img/space.jpg"
+                class="project-img"
+                alt="capstone-img"
+              />
+              <div class="overlay">
+                <p>
+                  Collaborated with a team to redesign the ASGC website,
+                  contributing to both the design process and implementing the
+                  site using WordPress.
+                </p>
+              </div>
+              <div class="project-name">ASGC</div>
+            </a>
+          </div>
+
+          <div class="project-item" data-category="capstone">
+            <a href="capstone/uv-tracker/index.html">
+              <img
+                src="asset/img/uv.jpg"
+                class="project-img"
+                alt="capstone-img"
+              />
+              <div class="overlay">
+                <p>
+                  Using HTML, CSS, and JavaScript, this UV Tracker shows past
+                  and future UV index levels for searched cities. It includes
+                  color-coded tables and interactive charts for easy
+                  visualization.
+                </p>
+              </div>
+              <div class="project-name">UV Index Tracker Tool</div>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-     
-   <div class="doc-wrapper">
-  <div class="resumes-sec">
 
-    <div class="sec-one">
-      <p>Software & Web Developer with hands-on experience in full-stack web applications, UI/UX design, and .NET/TypeScript development.</p>
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skills-group">
+            <h3>Technical Skills</h3>
+            <div class="bubble-container tech">
+              <div class="skill-bubble">.NET(.NET8/ .NET10)</div>
+              <div class="skill-bubble">HTML5/CSS3</div>
+              <div class="skill-bubble">Firebase</div>
+              <div class="skill-bubble">Web Accessibility</div>
+              <div class="skill-bubble">Git / GitHub</div>
+              <div class="skill-bubble">Agile/ Scrum</div>
+              <div class="skill-bubble">TypeScript</div>
+              <div class="skill-bubble">Database Management</div>
+              <div class="skill-bubble">Responsive Web Design</div>
+              <div class="skill-bubble">SQL/ Oracle PL/SQL</div>
+              <div class="skill-bubble">Target Process</div>
+              <div class="skill-bubble">Change Management (CM) System</div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Soft Skills</h3>
+            <div class="bubble-container soft">
+              <div class="skill-bubble">Teamwork</div>
+              <div class="skill-bubble">Attention to Detail</div>
+              <div class="skill-bubble">Communication</div>
+              <div class="skill-bubble">Time Management</div>
+              <div class="skill-bubble">Problem Solving</div>
+              <div class="skill-bubble">Leadership</div>
+              <div class="skill-bubble">Critical Thinking</div>
+              <div class="skill-bubble">Adaptability</div>
+              <div class="skill-bubble">Active Listening</div>
+              <div class="skill-bubble">Willingness to Learn</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <h3>Skills</h3>
-      <p>.NET (.NET 8 / .NET 10) | TypeScript | HTML5 / CSS3 | Real-time database management | Firebase | Responsive Web Design | Web Accessibility | SQL / Oracle PL/SQL | Git / GitHub | Target Process | Agile / Scrum | Change Management (CM) Systems</p>
+      <!-- About Section -->
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <div id="about-content">
+          <img src="asset/img/photo.jpg" alt="self-img" class="self-img" />
+          <div class="about-info">
+            <p>
+              I’m a student at UALR majoring in Information Science with a minor
+              in Information Technology. My journey into tech began when I felt
+              stuck and decided to try something new, and once I discovered
+              programming, I was hooked. Exploring how things work behind the
+              scenes in both front-end and back-end development revealed my
+              passion for problem-solving and creating through code. I love
+              building websites with HTML, CSS, and JavaScript, and I get
+              excited about turning ideas into real, tangible projects. I’m also
+              curious about areas like game development and product design and
+              hope to explore them further as I grow. While I’m still shaping my
+              exact path, I’m driven by learning, building, and continually
+              challenging myself in tech.
+            </p>
+          </div>
+        </div>
+      </div>
 
-      <h3>Education</h3>
-      <h5>
-        <span class="p-weight"><a href="http://ualr.edu">UA Little Rock</a></span> - 
-        <span class="style">BASc, Information Science</span>
-      </h5>
-      <p>December 2026, Little Rock</p>
-     <!--<p>Focus on using data and technology to improve decision-making, systems, and user experiences.</p>--> 
-     <h3>Awards</h3>
-      <h5><span class="award-s">Chancellor’s Leadership Corps Scholar, University of Arkansas at Little Rock</span></h5>
-   
-    </div>
+      <!-- Documents Section -->
+      <div id="document" class="section">
+        <h1>Ayat Alkhatib</h1>
+        <div class="contact-info-wrapper">
+          <div class="contact-info">
+            <div class="format">
+              <a href="documents/resume/resume.docx"> Resume Docx</a>
+            </div>
+            <a href="tel:5015043018">(501) 504-3018</a>
+            <a href="mailto:ayatnalkhatib@gmail.com">ayatnalkhatib@gmail.com</a>
+            <a href="https://ayatnalkhatib.github.io/portfolio/">Portfolio</a>
+            <div class="format">
+              <a href="documents/resume/resume.pdf"> Resume PDF</a>
+            </div>
+          </div>
+        </div>
 
-    
+        <div class="doc-wrapper">
+          <div class="resumes-sec">
+            <div class="sec-one">
+              <p>
+                Software & Web Developer with hands-on experience in full-stack
+                web applications, UI/UX design, and .NET/TypeScript development.
+              </p>
 
-    <div class="sec-two">
-      <h3>Experience</h3>
+              <h3>Skills</h3>
+              <p>
+                .NET (.NET 8 / .NET 10) | TypeScript | HTML5 / CSS3 | Real-time
+                database management | Firebase | Responsive Web Design | Web
+                Accessibility | SQL / Oracle PL/SQL | Git / GitHub | Target
+                Process | Agile / Scrum | Change Management (CM) Systems
+              </p>
 
-      <h5>
-        <span class="p-weight">USAble Life</span>
-      </h5>
-      <p>APPLICATION DEVELOPER INTERN | June 2026 - Present</p>
-      <ul>
-        <li>Upgraded web applications to .NET 10 and wrote modular TypeScript following team design patterns and standards.</li>
-        <li>Managed automated package updates via Dependabot, authoring user stories, CM tickets, and testing patches for deployment.</li>
-        <li>Executed Git version control workflows, resolved complex merge conflicts, and conducted PR reviews to ensure codebase stability.</li>
-        <li>Executed Git version control workflows, resolved complex merge conflicts, and conducted PR reviews to ensure codebase stability.</li>
-        <li>Implemented web accessibility standards across user interfaces, leveraging dev formatting tools to enhance inclusivity and code quality.</li>
-      </ul>
+              <h3>Education</h3>
+              <h5>
+                <span class="p-weight"
+                  ><a href="http://ualr.edu">UA Little Rock</a></span
+                >
+                -
+                <span class="style">BASc, Information Science</span>
+              </h5>
+              <p>December 2026, Little Rock</p>
+              <!--<p>Focus on using data and technology to improve decision-making, systems, and user experiences.</p>-->
+              <h3>Awards</h3>
+              <h5>
+                <span class="award-s"
+                  >Chancellor’s Leadership Corps Scholar, University of Arkansas
+                  at Little Rock</span
+                >
+              </h5>
+            </div>
 
-      <h5>
-        <span class="p-weight">Mafia Game</span> — 
-        <span class="style"> Full-Scale Web Game Development Project</span>
-      </h5>
-      <p>Founder | May 2025 - Present</p>
-      <ul>
-        <li>Programmed real-time social deduction mechanics and lobby syncing using Firebase.</li>
-        <li>Integrated live chat and voting systems to enable instant player interaction.</li>
-        <li>Added speech synthesis technology for dynamic voiceover narration during phase shifts.</li>
-        <li>Developed an accessible, mobile-responsive front end (HTML/CSS/JS) that requires zero downloads.</li>
-      </ul>
+            <div class="sec-two">
+              <h3>Experience</h3>
 
-    </div>
+              <h5>
+                <span class="p-weight">Mafia Game</span> —
+                <span class="style">
+                  Full-Scale Web Game Development Project</span
+                >
+              </h5>
+              <p>Founder | May 2025 - Present</p>
+              <ul>
+                <li>
+                  Programmed real-time social deduction mechanics and lobby
+                  syncing using Firebase.
+                </li>
+                <li>
+                  Integrated live chat and voting systems to enable instant
+                  player interaction.
+                </li>
+                <li>
+                  Added speech synthesis technology for dynamic voiceover
+                  narration during phase shifts.
+                </li>
+                <li>
+                  Developed an accessible, mobile-responsive front end
+                  (HTML/CSS/JS) that requires zero downloads.
+                </li>
+              </ul>
 
-  </div>
-</div>
+              <h5>
+                <span class="p-weight">USAble Life</span>
+              </h5>
+              <p>APPLICATION DEVELOPER INTERN | June 2026 - October 2026</p>
+              <ul>
+                <li>
+                  Upgraded web applications to .NET 10 and wrote modular
+                  TypeScript following team design patterns and standards.
+                </li>
+                <li>
+                  Managed automated package updates via Dependabot, authoring
+                  user stories, CM tickets, and testing patches for deployment.
+                </li>
+                <li>
+                  Executed Git version control workflows, resolved complex merge
+                  conflicts, and conducted PR reviews to ensure codebase
+                  stability.
+                </li>
+                <li>
+                  Executed Git version control workflows, resolved complex merge
+                  conflicts, and conducted PR reviews to ensure codebase
+                  stability.
+                </li>
+                <li>
+                  Implemented web accessibility standards across user
+                  interfaces, leveraging dev formatting tools to enhance
+                  inclusivity and code quality.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact Section -->
+      <div id="contact" class="section">
+        <h2>Feel free to Reach out</h2>
+        <form
+          action="https://formspree.io/f/xdklrbbl"
+          method="POST"
+          class="contact-form"
+        >
+          <label
+            >Name: <br /><input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Full Name"
+          /></label>
+          <label
+            >Email: <br /><input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+          /></label>
+          <label
+            >Subject: <br /><input
+              type="text"
+              name="email"
+              placeholder="Subject"
+          /></label>
+          <label
+            >Message: <br /><textarea
+              name="message"
+              placeholder="Write your message..."
+            ></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
 
-
-
-
-      
-</div>
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-      <h2>Feel free to Reach out</h2>
-      <form action="https://formspree.io/f/xdklrbbl" method="POST" class="contact-form">
-        <label>Name: <br><input type="text" id="name" name="name" required placeholder="Your Full Name"></label>
-        <label>Email: <br><input type="email" name="email" placeholder="Your Email"></label>
-        <label>Subject: <br><input type="text" name="email" placeholder="Subject"></label>
-        <label>Message: <br><textarea name="message" placeholder="Write your message..."></textarea></label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-
-  </section>
-
-  <!--Footer-->
-    <footer  id="colophon">
-
+    <!--Footer-->
+    <footer id="colophon">
       <div class="footer-con">
-        <a href="https://www.linkedin.com/in/ayat-alkhatib" title="Linkedin"><img src="asset/img/linked-removebg-preview.png" alt="linkedin" ></a>
-        <a href="https://github.com/ayatnalkhatib" title="Github"><img src="asset/img/github-svg.png" alt="github"></a>
-        <a href="documents/cover-letter/cover-letter.pdf" title="Cover Letter"><img src="asset/img/cover_letter-removebg-preview.png" alt="cover-letter"></a>
-        <a href="documents/resume/resume.pdf" title="Resume"><img src="asset/img/resume.png" alt="resume"></a>
-        <a href="#contact" title="Email"><img src="asset/img/email-removebg-preview.png" alt="email"></a>
+        <a href="https://www.linkedin.com/in/ayat-alkhatib" title="Linkedin"
+          ><img src="asset/img/linked-removebg-preview.png" alt="linkedin"
+        /></a>
+        <a href="https://github.com/ayatnalkhatib" title="Github"
+          ><img src="asset/img/github-svg.png" alt="github"
+        /></a>
+        <a href="documents/cover-letter/cover-letter.pdf" title="Cover Letter"
+          ><img
+            src="asset/img/cover_letter-removebg-preview.png"
+            alt="cover-letter"
+        /></a>
+        <a href="documents/resume/resume.pdf" title="Resume"
+          ><img src="asset/img/resume.png" alt="resume"
+        /></a>
+        <a href="#contact" title="Email"
+          ><img src="asset/img/email-removebg-preview.png" alt="email"
+        /></a>
       </div>
       <h6>&copy; 2025 Ayat Alkhatib</h6>
-
     </footer>
 
-  <!-- Back to top button -->
-  <button id="backToTop"><img src="asset/img/pointer-removebg-preview.png" alt="scrollarrow"></button>
+    <!-- Back to top button -->
+    <button id="backToTop">
+      <img src="asset/img/pointer-removebg-preview.png" alt="scrollarrow" />
+    </button>
 
-  <!-- Scripts -->
-  <script src="asset/js/button.js"></script>
-  <script src="asset/js/script.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="asset/js/button.js"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
 </html>

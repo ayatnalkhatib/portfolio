@@ -1,15 +1,14 @@
+var btn = $("#backToTop");
 
-var btn = $('#backToTop');
-
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 50) {
-    btn.addClass('show');
+    btn.addClass("show");
   } else {
-    btn.removeClass('show');
+    btn.removeClass("show");
   }
 });
 
-btn.on('click', function(e) {
+btn.on("click", function (e) {
   e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });

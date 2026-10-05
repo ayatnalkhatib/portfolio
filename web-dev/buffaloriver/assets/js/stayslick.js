@@ -1,2 +1,1 @@
-
-  $('.carousel').slick();
+$(".carousel").slick();

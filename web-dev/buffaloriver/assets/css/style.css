@@ -8,58 +8,60 @@
 #C2A878 - footer bg
 -----*/
 
-
 :root {
-    --body-text: #383737;
-    --body-text-inverse: #EBEBEF;
-    --light-bg: #f2f2f2;
-    --dark-bg: #416276;
-    --cta-button-color:#4b3520;
-    --accent-color: #416276;
-    --dark-bg-opacity: rgba(2, 30, 1, 0.7);
-    --standard-padding: 30px;
-    --min-padding: 10px;
-  }
+  --body-text: #383737;
+  --body-text-inverse: #ebebef;
+  --light-bg: #f2f2f2;
+  --dark-bg: #416276;
+  --cta-button-color: #4b3520;
+  --accent-color: #416276;
+  --dark-bg-opacity: rgba(2, 30, 1, 0.7);
+  --standard-padding: 30px;
+  --min-padding: 10px;
+}
 
 html {
-    color: var(--body-text);
-    font-size: 1em;
-    line-height: 1.5;
-    box-sizing: border-box;
-  }
-  
-  *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-  
-    /* #region global styles ------------- */
+  color: var(--body-text);
+  font-size: 1em;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* #region global styles ------------- */
 
 body {
-    /* DESIGN TIME CONTAINER */
-    /*max-width: 375px; */
-    /*border: 3px solid; */
-    font-size: 1rem;
-    font-family: poppins;
-    margin: 0px;
-    padding: 0px;
+  /* DESIGN TIME CONTAINER */
+  /*max-width: 375px; */
+  /*border: 3px solid; */
+  font-size: 1rem;
+  font-family: poppins;
+  margin: 0px;
+  padding: 0px;
 }
 
 a {
-    color: var(--body-text);
-    text-decoration: none;
-  }
-
-a:hover {
-    text-decoration: underline;
+  color: var(--body-text);
+  text-decoration: none;
 }
 
-  h1,h2,h3,h4 {
-    font-family: merriweather;
-   }
-  
-   /* Base (mobile-first) */
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: merriweather;
+}
+
+/* Base (mobile-first) */
 h1 {
   font-size: 1.75rem;
 }
@@ -79,51 +81,51 @@ h3 {
   }
 }
 
-   /* ---- This makes our images responsive but they still need to be optimized ----*/
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-  }
+/* ---- This makes our images responsive but they still need to be optimized ----*/
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
-   /* #endregion global styles---------- */
+/* #endregion global styles---------- */
 
-   /* #region utility ----------------*/
+/* #region utility ----------------*/
 
-.container{
-    width:80vw;
-    margin: 0px auto 0px auto;
-    max-width: 1000px;
-  }
+.container {
+  width: 80vw;
+  margin: 0px auto 0px auto;
+  max-width: 1000px;
+}
 
 .cta-button {
-    color: var(--body-text-inverse);
-    text-decoration: none;
-    background: var(--cta-button-color);
-    padding: 1em;
-    margin-top: 10px;
-    border-radius: 8px;
-   }
+  color: var(--body-text-inverse);
+  text-decoration: none;
+  background: var(--cta-button-color);
+  padding: 1em;
+  margin-top: 10px;
+  border-radius: 8px;
+}
 
-.img-right{
-    float: right;
-    margin: 10px 0 10px 20px;
-    border: 4px double #20627d;
-    padding: 5px;
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 4px double #20627d;
+  padding: 5px;
 }
 
 .img-left {
-    float: left;
-    margin: 10px 20px 10px 0px;
-    border: 4px double #20627d;
-    padding: 5px;
+  float: left;
+  margin: 10px 20px 10px 0px;
+  border: 4px double #20627d;
+  padding: 5px;
 }
 
 .img-center {
-    display: block;
-    margin: 20px auto;
-    border: 4px solid #20627d;
-    padding: 5px;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #20627d;
+  padding: 5px;
 }
 
 .card-grid {
@@ -145,7 +147,6 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
-  
 }
 
 .card-content {
@@ -172,8 +173,7 @@ section.two-col-layout {
   gap: 30px;
 }
 
-   /* #endregion utility ------*/
-
+/* #endregion utility ------*/
 
 /* #region main css*/
 
@@ -217,9 +217,9 @@ section.two-col-layout {
 .nav-button:hover {
   text-decoration: none;
   background: rgba(65, 98, 118, 0.9);
-  transition: .4s;
+  transition: 0.4s;
 }
-/* Styled secondary nav-button */ 
+/* Styled secondary nav-button */
 
 /*
  .weather-button {
@@ -237,90 +237,88 @@ section.two-col-layout {
 
 /* Top bar */
 header.primary nav.secondary {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 0.5rem 1rem;
   color: var(--body-text-inverse);
 }
 
-
-
 header.primary nav.secondary {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    column-gap: 1rem;
-    row-gap: 2rem;
-    width: 100%;
-    height: 2.9rem;
-    background: var(--dark-bg);
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  width: 100%;
+  height: 2.9rem;
+  background: var(--dark-bg);
+}
 
-  nav.secondary a {
-    color: var(--body-text-inverse);
-    text-decoration: none;
-  }
+nav.secondary a {
+  color: var(--body-text-inverse);
+  text-decoration: none;
+}
 
-  nav.secondary a:hover {
-    text-decoration: underline;
-  }
+nav.secondary a:hover {
+  text-decoration: underline;
+}
 
-  .phone::before {
-    content: '';
-    display: inline-block;
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: 0.5rem;
-    background-image: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.58 1 1 0 011 1v3.61a1 1 0 01-1 1A16 16 0 013 5a1 1 0 011-1h3.61a1 1 0 011 1 11.72 11.72 0 00.58 3.66 1 1 0 01-.21 1.11l-2.36 2.36z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-  }
+.phone::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.58 1 1 0 011 1v3.61a1 1 0 01-1 1A16 16 0 013 5a1 1 0 011-1h3.61a1 1 0 011 1 11.72 11.72 0 00.58 3.66 1 1 0 01-.21 1.11l-2.36 2.36z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
 
-  header.primary nav ul li {
-    list-style-type: none;
-  }
+header.primary nav ul li {
+  list-style-type: none;
+}
 
-  header.primary nav ul li a {
-    font-size: 1.3em;
-  }
+header.primary nav ul li a {
+  font-size: 1.3em;
+}
 
-  header {
-    background: var(--light-bg);
-    position: relative;
-  }
-  
-  header::after {
-    content: '';
-    clear: both;
-    display: block;
-  }
-  
-  header.primary h1 {
-    float: left;
-  }
-  
-  header.primary h1 a {
-    background: url(../img/logo.png) no-repeat;
-    display: block;
-    width: 300px;
-    height: 200px;
-    margin: 0px auto 0px 10px;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
+header {
+  background: var(--light-bg);
+  position: relative;
+}
+
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header.primary h1 {
+  float: left;
+}
+
+header.primary h1 a {
+  background: url(../img/logo.png) no-repeat;
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: 0px auto 0px 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 header.primary div#primary-hero {
-    background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-475.jpg);
-    height: 300px;
+  background-image: url(https://digital-natives-rule.github.io/buffalo-river-adventure-co/assets/img/canoe-fun-475.jpg);
+  height: 300px;
 }
 
 #featured-grid {
   padding: 2rem 1rem;
 }
 
-#featured-grid h2{
+#featured-grid h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -470,9 +468,8 @@ header.primary div#primary-hero {
   text-decoration: none;
 }
 
-
 #colophon {
-  background: #C2A878;
+  background: #c2a878;
   padding: 2rem 1rem;
 }
 
@@ -522,7 +519,6 @@ header.primary div#primary-hero {
 
 /*  ABOUT PAGE */
 
-
 /*rental subpages */
 
 .intro {
@@ -532,10 +528,10 @@ header.primary div#primary-hero {
   margin: 0 auto;
 }
 
-.intro h1, .intro p {
+.intro h1,
+.intro p {
   margin-bottom: 0.5rem;
-  padding-left:40px;
-
+  padding-left: 40px;
 }
 
 .intro .subtitle {
@@ -586,17 +582,15 @@ header.primary div#primary-hero {
   clear: both;
 }
 
-
-
 /* #endregion main css */
 
 /* Weather and Water page */
-.cards{
-  display:flex; 
+.cards {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap:2rem;
+  gap: 2rem;
 }
 
 .flipthecard {
@@ -607,7 +601,9 @@ header.primary div#primary-hero {
   position: relative;
 }
 
-.frontcard, .frontcard2, .returntofrontcard {
+.frontcard,
+.frontcard2,
+.returntofrontcard {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -630,7 +626,7 @@ header.primary div#primary-hero {
   justify-content: center;
 }
 
-.frontcard2{
+.frontcard2 {
   background-color: var(--dark-bg);
   z-index: 2;
   transform: rotateY(0deg);
@@ -646,14 +642,15 @@ header.primary div#primary-hero {
   transform: rotateY(180deg);
   z-index: 1;
   padding: 1em;
-  box-sizing: border-box; 
-  display:flex;
-  align-items:center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding:0;
+  padding: 0;
 }
 
-.flipthecard:hover .frontcard, .flipthecard:hover .frontcard2 {
+.flipthecard:hover .frontcard,
+.flipthecard:hover .frontcard2 {
   transform: rotateY(-180deg);
 }
 
@@ -662,16 +659,15 @@ header.primary div#primary-hero {
   z-index: 2;
 }
 
-.flipthecard h3{
-  color:white;
+.flipthecard h3 {
+  color: white;
 }
 
-.returntofrontcard canvas{
+.returntofrontcard canvas {
   width: 100%;
-  height:100%;
-  display:block;
+  height: 100%;
+  display: block;
 }
-
 
 .chart-panel {
   background-color: #ffff;
@@ -679,42 +675,47 @@ header.primary div#primary-hero {
   padding: 1.5rem;
   margin: 1rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  width:450px;
+  width: 450px;
   max-width: 100%;
   margin-bottom: 20px;
 }
 
-.chart-grid{
-  display:grid;
+.chart-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem; 
-  padding:1rem;
+  gap: 2rem;
+  padding: 1rem;
   justify-items: center;
 }
 
-#weather-table-container, .canoe-rental {
+#weather-table-container,
+.canoe-rental {
   background-color: #ffff;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding:20px;
-  display:block;
-  width:90%;
+  padding: 20px;
+  display: block;
+  width: 90%;
   max-width: 500%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
 }
 
-#weather-table-container table, .canoe-rental table {
+#weather-table-container table,
+.canoe-rental table {
   border-collapse: collapse;
   width: 100%;
 }
 
-#weather-table-container th, #weather-table-container td, .canoe-rental th, .canoe-rental td{
-  padding:20px;
-  text-align:center;
+#weather-table-container th,
+#weather-table-container td,
+.canoe-rental th,
+.canoe-rental td {
+  padding: 20px;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
@@ -722,44 +723,46 @@ header.primary div#primary-hero {
   padding-bottom: 5rem;
 }
 
-.safety-tips th, .safety-tips td{
+.safety-tips th,
+.safety-tips td {
   border-bottom: 1px solid #ddd;
   text-align: center;
   padding: 10px 12px;
 }
-#weather-table-container tr:nth-child(even){
+#weather-table-container tr:nth-child(even) {
   background-color: var(--light-bg);
 }
 
-#weather-table-container tr:hover{
-  background-color: #C2A878;
+#weather-table-container tr:hover {
+  background-color: #c2a878;
 }
 
 /* Back to top button ---*/
-#backToTop{
+#backToTop {
   position: fixed;
-  right:20px;
+  right: 20px;
   bottom: 20px;
-  color:white;
+  color: white;
   background-color: transparent;
-  height:50px;
-  width:50px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   float: right;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
-  visibility:hidden;
-  transition:  opacity 0.8s ease, visibility 0.4s;
+  visibility: hidden;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.4s;
 }
 
-#backToTop.show{
+#backToTop.show {
   opacity: 1;
   visibility: visible;
-
 }
 /* #region media queries -----------------------------------------*/
 
@@ -788,9 +791,10 @@ header.primary div#primary-hero {
     gap: 2rem;
   }
 
-  .hero img, #hero img{
-    height:300px;
-    width:325px;
+  .hero img,
+  #hero img {
+    height: 300px;
+    width: 325px;
   }
 
   .image-wrapper {
@@ -815,22 +819,20 @@ header.primary div#primary-hero {
     flex-direction: column;
     justify-content: start;
   }
-  
+
   .testimonials-wrapper {
     display: flex;
     gap: 1rem;
-    
   }
 
   .testimonial {
     flex: 1;
     margin-bottom: 0; /* remove bottom margin since they're side-by-side */
-    
   }
 
- div.article-footer span {
-  color:black;
- }
+  div.article-footer span {
+    color: black;
+  }
   .cta-section {
     display: flex;
     justify-content: center;
@@ -969,8 +971,6 @@ header.primary div#primary-hero {
   .info-feature ul {
     font-size: 1.1rem;
   }
-
-
 }
 
 /* stay form format -- */
@@ -980,7 +980,6 @@ header.primary div#primary-hero {
   justify-content: center;
   gap: 2rem;
   margin-top: 40px;
-  
 }
 
 .hero-photo-grid + section .booking-container {
@@ -988,112 +987,99 @@ header.primary div#primary-hero {
   max-width: 450px;
   min-height: 250px;
   overflow: visible;
-  
- 
 }
 
-.image-container img{
-  height:450px;
-  width:625px;
+.image-container img {
+  height: 450px;
+  width: 625px;
 }
 
-.amenities, #amenities{
+.amenities,
+#amenities {
   position: relative;
-  
 }
 
-.amenities img, #amenities img{
+.amenities img,
+#amenities img {
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   max-width: 400px;
   height: auto;
   object-fit: cover;
   padding-top: 90px;
   padding-bottom: 60px;
-
-  
 }
 
-
-.amenities h2, #amenities h2{
-  margin:0 auto;
+.amenities h2,
+#amenities h2 {
+  margin: 0 auto;
   color: #000000;
   display: block;
-  width:100%;
+  width: 100%;
   padding-bottom: 10px;
   padding-top: 60px;
-
-  
 }
 
-.amenities ul, #amenities ul {
+.amenities ul,
+#amenities ul {
   flex: 1;
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 20px;
-
 }
 
-.amenities p, .wildlife-categories p{
+.amenities p,
+.wildlife-categories p {
   margin-bottom: 20px;
 }
 
-
 /* Wildlife page */
 
-.two-col-grid{
-  display:flex;
+.two-col-grid {
+  display: flex;
   flex-wrap: wrap;
-  gap:20px;
+  gap: 20px;
   align-items: flex-start;
-  width:100%;
+  width: 100%;
 }
 
-.tipslist{
+.tipslist {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.tipslist  li{
+.tipslist li {
   text-decoration: none;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  
 }
 
-.tipslist li p{
-
+.tipslist li p {
   margin: 0;
 }
 .wildlife-categories {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: flex-start; 
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 2rem;
   padding: 0 2rem;
   position: relative;
- 
-
-
 }
 
-.icon{
+.icon {
   width: 50px;
   height: 50px;
   vertical-align: middle;
-  
 }
 
-.social-card-section h2{
+.social-card-section h2 {
   text-align: center;
 }
 
-
-
- /*
+/*
 .wildlife-categories > img {
   float: right;
   max-width: 300px;
@@ -1171,13 +1157,14 @@ header.primary div#primary-hero {
   object-fit: cover;
 }
 
-
-
 /* #endregion media queries ----------- */
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* This makes it responsive */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* This makes it responsive */
   gap: 20px;
   padding: 20px;
 }
